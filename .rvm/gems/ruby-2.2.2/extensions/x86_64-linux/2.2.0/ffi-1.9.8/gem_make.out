@@ -1,0 +1,44 @@
+/home/lee/.rvm/rubies/ruby-2.2.2/bin/ruby -r ./siteconf20150429-21224-tooqro.rb extconf.rb
+checking for ffi_call() in -lffi... yes
+checking for ffi_prep_closure()... yes
+checking for ffi_raw_call()... yes
+checking for ffi_prep_raw_closure()... yes
+checking for rb_thread_blocking_region()... no
+checking for rb_thread_call_with_gvl()... yes
+checking for rb_thread_call_without_gvl()... yes
+checking for ffi_prep_cif_var()... yes
+creating extconf.h
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling Thread.c
+compiling MappedType.c
+compiling Pointer.c
+compiling DataConverter.c
+compiling LastError.c
+compiling StructLayout.c
+compiling Buffer.c
+compiling ffi.c
+compiling FunctionInfo.c
+compiling LongDouble.c
+compiling MemoryPointer.c
+compiling Function.c
+compiling DynamicLibrary.c
+compiling ClosurePool.c
+compiling StructByReference.c
+compiling ArrayType.c
+compiling Call.c
+compiling Type.c
+compiling Platform.c
+compiling Struct.c
+compiling Variadic.c
+compiling MethodHandle.c
+compiling AbstractMemory.c
+compiling StructByValue.c
+compiling Types.c
+linking shared-object ffi_c.so
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 ffi_c.so ./.gem.20150429-21224-17cmpu9

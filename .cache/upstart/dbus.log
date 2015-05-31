@@ -1,0 +1,185 @@
+Activating service name='com.ubuntu.OneConf'
+Successfully activated service 'com.ubuntu.OneConf'
+WARNING:oneconf.hosts:Error in loading other_hosts file: [Errno 2] No such file or directory: '/home/lee/.cache/oneconf/4c2632d452d9ef173c159f3f55407977/other_hosts'
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'
+Activating service name='com.canonical.Unity.Webapps.Service'
+Successfully activated service 'com.canonical.Unity.Webapps.Service'
+** Message: Investigating webapp: unity-webapps-common 
+
+
+** (process:3161): WARNING **: Found newline before all of metadata, skipping app
+** Message: Investigating webapp: unity-webapps-qml 
+
+
+** (process:3161): WARNING **: Found newline before all of metadata, skipping app
+** Message: Investigating webapp: unity-webapps-qml-doc 
+
+
+** (process:3161): WARNING **: Found newline before all of metadata, skipping app
+** Message: Investigating webapp: unity-webapps-qml-examples 
+
+
+** (process:3161): WARNING **: Found newline before all of metadata, skipping app
+** Message: Investigating webapp: unity-webapps-service 
+
+
+** (process:3161): WARNING **: Found newline before all of metadata, skipping app
+** Message: Investigating webapp: unity-webapps-amazoncloudreader 
+
+** Message: Investigating webapp: unity-webapps-bbcnews 
+
+** Message: Investigating webapp: unity-webapps-cnn-news 
+
+** Message: Investigating webapp: unity-webapps-deezer 
+
+** Message: Investigating webapp: unity-webapps-dev 
+
+
+** (process:3161): WARNING **: Found newline before all of metadata, skipping app
+** Message: Investigating webapp: unity-webapps-deviantart 
+
+** Message: Investigating webapp: unity-webapps-facebookmessenger 
+
+** Message: Investigating webapp: unity-webapps-googlenews 
+
+** Message: Investigating webapp: unity-webapps-googleplusgames 
+
+
+** (process:3161): WARNING **: Found newline before all of metadata, skipping app
+** Message: Investigating webapp: unity-webapps-grooveshark 
+
+** Message: Investigating webapp: unity-webapps-hulu-player 
+
+** Message: Investigating webapp: unity-webapps-lastfm-radio 
+
+** Message: Investigating webapp: unity-webapps-launchpad 
+
+** Message: Investigating webapp: unity-webapps-librefm 
+
+** Message: Investigating webapp: unity-webapps-linkedin 
+
+** Message: Investigating webapp: unity-webapps-mail-ru 
+
+** Message: Investigating webapp: unity-webapps-newsblur 
+
+** Message: Investigating webapp: unity-webapps-pandora 
+
+** Message: Investigating webapp: unity-webapps-pandora-com 
+
+** Message: Investigating webapp: unity-webapps-qml-autopilot 
+
+
+** (process:3161): WARNING **: Found newline before all of metadata, skipping app
+** Message: Investigating webapp: unity-webapps-qq-mail 
+
+** Message: Investigating webapp: unity-webapps-reddit 
+
+** Message: Investigating webapp: unity-webapps-tumblr 
+
+** Message: Investigating webapp: unity-webapps-twitter 
+
+** Message: Investigating webapp: unity-webapps-vkcom 
+
+** Message: Investigating webapp: unity-webapps-wordpress 
+
+** Message: Investigating webapp: unity-webapps-wordpress-com 
+
+** Message: Investigating webapp: unity-webapps-yahoonews 
+
+** Message: Investigating webapp: unity-webapps-yandex-music 
+
+** Message: Investigating webapp: unity-webapps-yandexmail 
+
+** Message: Investigating webapp: unity-webapps-yandexmusic 
+
+** Message: Investigating webapp: unity-webapps-yandexnews 
+
+** Message: Investigating webapp: unity-webapps-qml 
+
+
+** (process:3161): WARNING **: Found newline before all of metadata, skipping app
+** Message: Investigating webapp: unity-webapps-qml-examples 
+
+
+** (process:3161): WARNING **: Found newline before all of metadata, skipping app
+** Message: Investigating webapp: unity-webapps-service 
+
+
+** (process:3161): WARNING **: Found newline before all of metadata, skipping app
+** Message: Investigating webapp: unity-webapps-gmail 
+
+** Message: Investigating webapp: unity-webapps-googlecalendar 
+
+** Message: Investigating webapp: unity-webapps-googledocs 
+
+** Message: Investigating webapp: unity-webapps-googleplus 
+
+** Message: Investigating webapp: unity-webapps-livemail 
+
+** Message: Investigating webapp: unity-webapps-yahoomail 
+
+** Message: Investigating webapp: unity-webapps-youtube 
+
+module-cache-reaper-Message: Reaping abandoned data directories
+module-cache-reaper-Message: Reaping abandoned cache directories
+
+** (process:2310): WARNING **: *** Unsupported operation detected on trash directory
+
+** (process:2310): WARNING **:     A trash files/ directory should only have files linked or unlinked (via moves or deletes).  Some other operation has been detected on a file in the directory (eg: a file has been modified).  Likely, the data reported by the trash backend will now be inconsistent.
+
+** (process:2310): WARNING **:   dir: /home/lee/.local/share/Trash/files, file: agency-jekyll-theme, type: 1
+
+
+
+** (process:2310): WARNING **: *** Unsupported operation detected on trash directory
+
+** (process:2310): WARNING **:   dir: /home/lee/.local/share/Trash/files, file: page.html, type: 1
+
+
+
+** (process:2310): WARNING **: *** Unsupported operation detected on trash directory
+
+** (process:2310): WARNING **:   dir: /home/lee/.local/share/Trash/files, file: post.html, type: 1
+
+
+
+** (process:2310): WARNING **: *** Unsupported operation detected on trash directory
+
+** (process:2310): WARNING **:   dir: /home/lee/.local/share/Trash/files, file: 2015-05-30-welcome-to-jekyll.markdown, type: 1
+
+
+
+** (process:2310): WARNING **: *** Unsupported operation detected on trash directory
+
+** (process:2310): WARNING **:   dir: /home/lee/.local/share/Trash/files, file: main.scss, type: 1
+
+
+
+** (process:2310): WARNING **: *** Unsupported operation detected on trash directory
+
+** (process:2310): WARNING **:   dir: /home/lee/.local/share/Trash/files, file: _config.2.yml, type: 1
+
+
+
+** (process:2310): WARNING **: *** Unsupported operation detected on trash directory
+
+** (process:2310): WARNING **:   dir: /home/lee/.local/share/Trash/files, file: about.2.md, type: 1
+
+
+
+** (process:2310): WARNING **: *** Unsupported operation detected on trash directory
+
+** (process:2310): WARNING **:   dir: /home/lee/.local/share/Trash/files, file: feed.2.xml, type: 1
+
+
+
+** (process:2310): WARNING **: *** Unsupported operation detected on trash directory
+
+** (process:2310): WARNING **:   dir: /home/lee/.local/share/Trash/files, file: index.2.html, type: 1
+
+
+
+** (zeitgeist-fts:2536): WARNING **: Unable to get info on application://nautilus-autostart.desktop

@@ -1,0 +1,25 @@
+[2015-04-29 16:03:17] __rvm_set_executable
+__rvm_set_executable () 
+{ 
+    for __file in "$@";
+    do
+        [[ -x "${__file}" ]] || chmod +x "${__file}";
+    done
+}
+current path: /home/lee/.rvm/src/ruby-2.2.2
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/lee/.rvm/bin:/home/lee/.rvm/bin
+command(8): __rvm_set_executable /home/lee/.rvm/rubies/ruby-2.2.2/bin/erb /home/lee/.rvm/rubies/ruby-2.2.2/bin/gem /home/lee/.rvm/rubies/ruby-2.2.2/bin/irb /home/lee/.rvm/rubies/ruby-2.2.2/bin/rake /home/lee/.rvm/rubies/ruby-2.2.2/bin/rdoc /home/lee/.rvm/rubies/ruby-2.2.2/bin/ri /home/lee/.rvm/rubies/ruby-2.2.2/bin/ruby
+++ for __file in '"$@"'
+++ [[ -x /home/lee/.rvm/rubies/ruby-2.2.2/bin/erb ]]
+++ for __file in '"$@"'
+++ [[ -x /home/lee/.rvm/rubies/ruby-2.2.2/bin/gem ]]
+++ for __file in '"$@"'
+++ [[ -x /home/lee/.rvm/rubies/ruby-2.2.2/bin/irb ]]
+++ for __file in '"$@"'
+++ [[ -x /home/lee/.rvm/rubies/ruby-2.2.2/bin/rake ]]
+++ for __file in '"$@"'
+++ [[ -x /home/lee/.rvm/rubies/ruby-2.2.2/bin/rdoc ]]
+++ for __file in '"$@"'
+++ [[ -x /home/lee/.rvm/rubies/ruby-2.2.2/bin/ri ]]
+++ for __file in '"$@"'
+++ [[ -x /home/lee/.rvm/rubies/ruby-2.2.2/bin/ruby ]]

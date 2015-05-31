@@ -1,0 +1,3 @@
+# This file is created by ibus-daemon, please do not modify it
+IBUS_ADDRESS=unix:abstract=/tmp/dbus-keTPxASI,guid=1555eb195463b770cb0d8d845569b882
+IBUS_DAEMON_PID=1879

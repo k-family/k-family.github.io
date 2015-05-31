@@ -1,0 +1,1540 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>네이버 N드라이브</title>
+
+
+
+
+<link href="/css/deskhome.css?20150422-1808" rel="stylesheet" type="text/css">
+<link href="/css/deskhome_skin.css?20150422-1808" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	document.domain = "naver.com";
+
+	var ccsrv = "cc.naver.com";
+	var g_ssc, nsc;
+	g_ssc = nsc = "me.ndrive";
+
+	window.g_config = {
+		deploy: "release",
+		target: "KR",
+		version: "20150422-1808",
+		locale: {
+			id: "ko_KR",
+			lang: "ko",
+			country: "KR"
+		},
+		protocol: "http://",
+		domain: {
+			ems: "ndrive.naver.com",
+			cms: ""
+		},
+		url: {
+			ems: "${0}",
+			cms: "#{protocol}#{domain.cms}${0}"
+		},
+		capacity: {
+			max: Math.pow(1024, 4) + (30 * Math.pow(1024, 3))
+		}
+	};
+	
+		window.g_config.logged = true;
+		window.g_config.user = {
+			id: "chosun8do",
+			idx: "3886414",
+			idc: "2" 
+		};
+
+		window.g_config.timezone = "".replace(/\.5$/, ":30");
+		window.g_config.domain.cms = "ndrive2.naver.com";
+	
+</script>
+
+
+
+
+	<script type="text/javascript" charset="UTF-8" src="/js/ndrive/COMMON/lang_ko_KR.js?20150422-1808"></script>
+	<script type="text/javascript" charset="UTF-8" src="/js/release/web.core.js?20150422-1808"></script>
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	window.config.append({
+		now: "2015-05-17T22:41:59+09:00",
+		domain: {
+			photo: "photo.ndrive.naver.com",
+			contact: "contact.naver.com",
+			thumbnail: "thumb1.photo.ndrive.naver.com,thumb2.photo.ndrive.naver.com".split(",")
+		},
+		url: {
+			photo: "#{protocol}#{domain.photo}${0}",
+			history: "#{url.ems(/ajaxHistory.nhn)}",
+			uploader: {
+				flash: "#{url.ems(/flash/NDrive_FileUploader.swf)}",
+				airAgent: "#{url.ems(/flash/air/NDrive_Web_Agent.swf)}?#{version}",
+				air: "#{url.ems(/flash/air/AirRuncher.swf)}?#{version}",
+				activeX: "#{url.ems(/activex.nhn)}?#{version}"
+			},
+			contact: "#{protocol}#{domain.contact}",
+			office: {
+				viewer: "http://viewer.ndrive.naver.com/viewer.nhn",
+				word: "http://word.office.naver.com/word",
+				slide: "http://slide.office.naver.com/slide",
+				cell: "http://cell.office.naver.com/cell",
+				form: "http://form.office.naver.com/form"
+			},
+			explorer: {
+				win32: "http://cdn.naver.com/naver/tools/launcher/Toolbox-NDrive.exe",
+				win64: "http://cdn.naver.com/naver/tools/launcher/Toolbox-NDrive_x64.exe",
+				mac: "http://cdn.naver.com/naver/mac/ndrive/NdriveInstall.dmg"
+			},
+			emsPortable: "#{protocol}m.ndrive.naver.com"
+		},
+		user: {
+			internal: false,
+			external: false,
+			useWorks: false,
+			sharedCount: 0,
+			payment: false,
+			groupId: false,
+			register: true,
+			shareRegister: false,
+			alreadyRegisteredId: "",
+			realName: true,
+			ipPenalty: false,
+			disallowShare: false,
+			redirectUrl: ""
+		},
+		setup: {
+			skin: { code: "WH", className: "skin_white" },
+			startPage: "P",
+			startPhoto: true,
+			bodysearch: false,
+			officeViewer: true,
+			nativeUpload: 1, // 0: off, 1: on, 2: not ie
+			compressDownload: {
+				enable: false,
+				url: "#{protocol}#{domain.ems}"
+			},
+			portable: {
+				aos: "2.6.1",
+				ios: "2.6.1"
+			}
+		},
+		paid: {
+			paidUp: { type: "m", size: "300", yyyy: "2015", mm: "19", dd: "30" }
+		},
+		banner: {
+			autoUpload: true,
+			noticePopup: false,
+			top: {
+				data:  {"bannerData":{"imageHeight":49,"imageWidth":410,"show":false,"imageUrl":"https://ssl.pstatic.net/static/pwe/ndrive/promotion/banner_img_1tb_1.png","imageAlt":"N드라이브 1TB 출시! 지금 결제하면 연간 상품 2만원 할인!","linkType":"popup","linkUrl":"http://ndrive.naver.com/payment/user/upgrade.nhn","popupHeight":0,"popupWidth":0,"showYn":"y","expireCookieDate":365,"linkImageUrl":"https://ssl.pstatic.net/static/pwe/nm/bn/btn_link_120313.png","linkImageWidth":55,"linkImageHeight":12,"linkAlt":"자세히 보기","addtionalLinkImageUrl":"","addtionalLinkImageWidth":0,"addtionalLinkImageHeight":0,"addtionalLinkUrl":"","addtionalLinkAlt":"","addtionalLinkType":"popup","addtionalLinkPopupWidth":0,"addtionalLinkPopupHeight":0,"rawLinkType":"POPUP","rawAddtionalLinkType":"POPUP","cookieValue":"","pweServiceCode":"NDRIVE","promotionType":"image","cookieKey":"","promotionId":"image_promotion","modifyTime":"2015-05-06 14:40:32.0"},"cookieValue":"","pweServiceCode":"NDRIVE","expireCookieDate":365,"promotionType":"image","cookieKey":"","promotionId":"image_promotion","modifyTime":"2015-05-06 14:40:32.0","viewType":"image"}
+			},
+			payment: {
+				
+				
+				data: { "totalspace":32212254720,"unusedspace":1996059554, "unusedspaceStr":"1.86GB" },
+				
+				
+				
+            	images: ["https://ssl.pstatic.net/static/pwe/ndrive/promotion/banner_img_1503.png","https://ssl.pstatic.net/static/pwe/ndrive/promotion/banner_img_1503_30.png","https://ssl.pstatic.net/static/pwe/ndrive/promotion/banner_img_1503_100.png"]
+			}
+		},
+		promotion: {
+			start: "",
+			end: ""
+		}
+	});
+
+	window.config.set("capacity", {
+		info: {
+			
+			
+			"largefileunusedspace":20246666788,"filemaxsize":4294967296,"totalspace":32212254720,"largefileusedspace":11965587932,"unusedspace":1996059554,"totallargespace":32212254720,"largefileminsize":52428800,"usedspace":30216195166
+			
+			
+			
+		},
+		waste: {"cycle":30,"getcontentlength":"0"}
+	});
+
+	window.config.set("notifyCount", 0);
+
+	window.config.set("promotion.data", {
+		
+		aPromotionList : [
+		
+			
+   			
+		
+   		
+   				
+		   			{ "sBoldTitle":"","sComment":"[안내] N드라이브 본문검색 기능 안내 ","sURL":"http://ndrive.naver.com/notice.nhn?docId=10000000000029462037","sNotiType":"","nPopupWidth":"800", "nPopupHeight":"600", "bPopupBlank":"n"}
+   		
+   				, 
+		   			{ "sBoldTitle":"","sComment":"[안내] 태블릿, 폰에서 최적화된 N드라이브 모바일웹을 만나보세요!","sURL":"http://ndrive.naver.com/notice.nhn?docId=10000000000029928278","sNotiType":"","nPopupWidth":"800", "nPopupHeight":"600", "bPopupBlank":"n"}
+   		
+    	    		],
+		bActivity : true,
+  		nCurrentIDX : 0,
+  		nFirstPromotionCount : 0,
+   		sChangeDate : "2014-07-16 14:21:47",
+   		
+   			
+				nPromotionView : 0
+			
+			
+		
+	});
+
+
+//GNB
+var gnb_service = "ndrive";				
+var gnb_logout = window.config("protocol") + window.config("domain.ems"); 
+var gnb_template = "gnb_ut8";	        
+var gnb_brightness = 3;
+var gnb_item_hide_option= 8;            
+
+//버블링 방식의 이벤트처리 (포토)
+var nclk_evt = 3;						
+</script>
+
+</head>
+<body class="ko_KR">
+<script class="_quiz_html" type="text/x-jquery-tmpl">
+
+	        	
+					<dl class="vol_dl pr_photo">
+				        <dt><span>Q.</span>1TB에는 몇 장의<br>사진을 저장할 수 있을까요?<br><i>(사진크기 3MB로 계산)</i></dt>
+				        <dd class="ck_1">
+				            <input type="radio" id="tb_radio3" name="tb_radio" class="_ok">
+				            <!-- 선택시 .check 클래스 추가 -->
+				            <label for="tb_radio3" class="vo_tb3"><span>약 35만장</span></label>
+				            </label>
+				        </dd>
+				        <dd class="ck_2">
+				            <input type="radio" id="tb_radio4" name="tb_radio">
+				            <!-- 선택시 .check 클래스 추가 -->
+				            <label for="tb_radio4" class="vo_tb4"><span>약 35장</span></label>
+				        </dd>
+				    </dl>
+	        	
+        	
+</script>
+<!-- 초기 로딩 레이어 -->
+<div class="_initialize_loading_layer first_loading" style="z-index:10000000;display:block">
+<div style="width:100%;height:100%;background-color:#fff;filter: alpha(opacity=50);-moz-opacity: 0.5;opacity: 0.5;"></div>
+<div class="ld_line2" style="top:50%;left:50%;margin:-20px 0 0 -100px">
+	<div class="cont">
+		<img width="17" height="17" alt="" src="http://static.naver.com/desk/ico_ld_cm.gif"><strong>N드라이브</strong> 로딩 중입니다.
+	</div><!--[if lte IE 6.5]><iframe class="ie6fix"></iframe><![endif]-->
+</div>
+</div>
+<!-- // 초기 로딩 레이어 -->
+
+<div id="wrap" class="_wrap skin_white">
+<div id="u_skip">
+	<a href="#nav_snb"><span>N드라이브 폴더목록 바로가기</span></a>
+	<a href="#content"><span>N드라이브 파일목록 바로가기</span></a>
+</div>
+<div id="wrap_fix">
+	
+
+
+
+
+<link rel="stylesheet" type="text/css" href="http://pwe.naver.net/css/deskhome_header_20140825.css">	
+<script type="text/javascript" charset="UTF-8" src="http://pwe.naver.net/js/release/deskhome_menu_ns_20141205.js"></script>	
+<div id="header" class="{=OPTION_CLASS}">
+	<h1>
+		<a href="http://www.naver.com" class="naver"><span class="blind">NAVER</span></a>
+		<a href="#" class="_svc_lnk pwe_home"><span class="_header_tit blind">메일</span></a>
+	</h1>
+	<!-- 로그인 -->
+	<div class="login_group">
+		<!-- GNB -->
+		<div id="gnb" class="gnb">
+		</div>
+		<!-- //GNB -->
+	</div>
+	<!-- //로그인 -->
+	<div class="gnb_area">
+		<h2 class="blind">PWE서비스 바로가기</h2>
+		<div class="gnb_list_box" id="gnb_list">
+			<div class="gnb_first">
+				<ul>
+					<li class="_me me"><a title="네이버me" href="http://me.naver.com" class="me" accesskey=""><span class="blind">네이버me</span><span style="display:none;" class="article_num"><em class="_count"></em><span class="tail"></span></span></a></li>
+					<li class="_mail mail"><a title="메일" href="http://mail.naver.com" class="mail" accesskey=""><span class="blind">메일</span><span style="display:none" class="article_num"><em class="_count"></em><span class="tail"></span></span></a></li>
+					<li class="_note note"><a title="쪽지" href="http://note.naver.com" class="note" accesskey=""><span class="blind">쪽지</span><span style="display:none" class="article_num"><em class="_count"></em><span class="tail"></span></span></a></li>
+					<li class="_calendar calendar"><a title="캘린더" href="http://calendar.naver.com" class="calendar" accesskey=""><span class="blind">캘린더</span><span style="display:none" class="article_num"><em class="_count"></em><span class="tail"></span></span></a></li>
+					<li class="_memo memo"><a title="메모" href="http://memo.naver.com" class="memo" accesskey=""><span class="blind">메모</span><span style="display:none" class="article_num"><em class="_count"></em><span class="tail"></span></span></a></li>
+					<li class="_contact contact"><a title="주소록" href="http://contact.naver.com" class="address" accesskey=""><span class="blind">주소록</span><span style="display:none" class="article_num"><em class="_count"></em><span class="tail"></span></span></a></li>
+				</ul>
+			</div>
+			<div class="gnb_last">			
+				<a class="btn_more" title="메뉴 더보기" href="#"><span class="blind">더보기</span></a>
+				<ul class="_gnb_last">
+					<li class="_ndrive ndrive"><a title="N드라이브" href="http://ndrive.naver.com" class="ndrive" accesskey=""><span class="blind">N드라이브</span><span style="display:none" class="article_num"><em class="_count"></em><span class="tail"></span></span></a></li>
+					<li class="_office office"><a title="오피스" href="http://office.naver.com" class="office" accesskey=""><span class="blind">오피스</span><span style="display:none" class="article_num"><em class="_count"></em><span class="tail"></span></span></a></li>
+					<li class="_moneybook moneybook"><a title="가계부" href="http://moneybook.naver.com" class="moneybook" accesskey=""><span class="blind">가계부</span><span style="display:none" class="article_num"><em class="_count"></em><span class="tail"></span></span></a></li>			
+				</ul>
+			</div>
+		</div>
+	</div>
+	<span class="skin_lft_element"></span>
+	<span class="skin_rgt_element"></span>
+</div>
+
+	<!-- 딤드 기능 레이어 -->
+<div class="no_view _dimmed"></div>
+<!-- //딤드 기능 레이어 -->
+
+<!-- container -->
+<!-- [D] 클래스 section_mobile 추가하면 모바일 활용 안내 노출 -->
+<div id="container" class="_container">
+    <!--
+    <a href="#" class="btn_fold _c1(mcCore|toggleLeft) _stopDefault" onclick="ccr(this,'lfw.fold',event)">
+        <span class="blind">왼쪽 메뉴 접기/펼치기</span>
+    </a>
+    -->
+	<div class="context_menu rightmenu_layer" id="context_menu_layer" style="display:none;position:absolute;z-index:10;"></div>
+	<!-- Left -->
+	
+
+
+
+	<div id="lside">
+
+		<!-- PWE 공통메뉴 영역 -->
+		
+		<!-- //PWE 공통메뉴 영역 -->
+	    <!-- Left Nav -->
+	    <div id="nav_snb" class="_view_nav_snb">
+
+            <h2 class="blind"><a href="#" class="h_service"><em class="ndrive"><span>N드라이브</span></em></a></h2>
+            <div class="section_art_al">
+                <div class="alim_set">
+                    <h3 class="h3_tit _notification_title"><a href="#" class="area _notification_open_layer _link_left_notification_open"><span class="ico">&nbsp;</span><span class="ma">알림</span>&nbsp;<span class="dnum"><em class="_share_notification_text_count2"></em><span class="r_bg">&nbsp;</span></span></a></h3>
+                    <!-- [D] 레이어 열렸을경우 .cls 클래스 추가  -->
+                    <a href="#" class="alim_layer_btn _share_notification_open_button_link _EVENT(NOTIFICATION_LAYER_TOGGLE) _link_left_notification_open">레이어 열기</a>
+                </div>
+            </div>
+            <!-- 알림 -->
+            <div class="alim_area _share_notification_layer" style="display:none">
+                <div class="alim_abs">
+                    <ul class="alim_list _share_notification_list"></ul>
+                    <!-- 알림페이징 -->
+                    <div class="alim_page _share_notification_pagenavigation"><span class="prev"><a href="#" class="prev _EVENT(NOTIFICATION_LIST_PREVIOUS) _link_left_notification_prev"><em>이전</em></a></span><a href="#" class="next _EVENT(NOTIFICATION_LIST_NEXT) _link_left_notification_next"><em>다음</em></a></div>
+                    <!-- //알림페이징 -->
+                    <!-- 알림없을 시 -->
+                    <div class="alim_no _share_notification_nolist" style="display:none"><strong>새로운 알림이 없습니다.</strong>친구들과 폴더/앨범을 공유하고<br />업데이트 소식을 받아보세요.</div>
+                    <!-- //알림없을 시 -->
+                    <div class="alim_bot">
+                        <div class="l_bot"><span class="alim_check _notification_bottombar_deletereaded"><span class="delete">&nbsp;</span><em class="_share_notification_alim_titlelink"><a href="#" class="_EVENT(NOTIFICATION_REMOVE_READED) _link_left_notification_all_remove">모두삭제</a></em></span></div>
+                        <div class="r_bot"><a href="#" class="alim_close _EVENT(NOTIFICATION_LAYER_TOGGLE) _link_left_notification_close">닫기</a></div>
+                    </div>
+                    <span class="shadow">&nbsp;</span>
+                </div>
+            </div>
+            <!--// 알림 -->
+
+            <div class="btn_workset _droparea">
+                
+
+
+                <a href="#" class="btn_quickwrite _btn_upload _link_left_upload"><span>파일 올리기</span><input type="file" multiple="multiple"></a><a href="#" class="btn_import _btn_share_open _link_left_share_menu_more"><span>새문서</span></a>
+                <!-- NDRIVESUS-8731 -->
+                <div class="imp_ly imp_ly_v2 _upload_menu_layer" style="display: none;">
+                    <ul>
+                        <li class="imp_li"><a href="#" class="_file_upload">파일 올리기</a> <input type="file" multiple="multiple" title="파일 올리기"></li>
+                        <li class="imp_li"><a href="#" class="_folder_upload">폴더 올리기</a> <input type="file" webkitdirectory="webkitdirectory" mozdirectory="mozdirectory" directory="directory" title="폴더 올리기"></li>
+                    </ul>
+                </div>
+                <!-- //NDRIVESUS-8731 -->
+
+                <div class="bb_tip" id="share_promotion" style="display:none;">
+                    <div class="blind">
+                        <strong>공유하기 기능이 오픈했습니다.</strong>
+                        <span>그룹 스터디, 프로젝트과제의 공유자료를 폴더로 만들어 쉽게 공유해보세요.</span>
+                    </div>
+                    <!--a href="#" onclick="setMobileGuideSelectTab(1);return false;" class="detail_v"><em class="blind">자세히 보기</em></a-->
+                    <p class="no_bb_tip"><input type="checkbox" id="no_bbtip"><label for="no_bbtip">다시보지않기</label></p>
+                    <button class="bb_tip_close"><span class='tx'>닫기</span></button>
+                </div>
+                <div class="imp_ly _btn_share_menu" style="display:none;">
+                    <ul>
+                        <li><a href="#" class="_office_word">네이버 워드</a></li>
+                        <li><a href="#" class="_office_slide">네이버 슬라이드</a></li>
+                        <li><a href="#" class="_office_cell">네이버 셀</a></li>
+                        <li><a href="#" class="_office_form">네이버 폼</a></li>
+                    </ul>
+                </div>
+            </div>
+
+	        <!-- pwe 개별메뉴 -->
+	        <div class="_pwe_menu_area _ndrive_menu_wrapper">
+	            <!-- Left Navigation -->
+	            <h2 class="blind _view_ndrive _droparea"><a href="#" class="h_service"><em class="ndrive"><span>N드라이브</span></em></a></h2>
+	            <div class="svc_menu_area">
+	                <!-- [D] 스크롤되는 영역의 높이는 height에서 조정 -->
+	                <div id="left_nav" class="scrl _view_ndrive_menu_overflow _tree_container">
+		                <div class="section_art_area">
+		                	<div class="section_art _left_navigation"><!-- [D] 긴폴더 이름에 따른 유동적인 width값 -->
+								<ul class="vm_list _view_menu_collection"><!-- [D] 클릭시 ul에 click 클래스 추가 -->
+								<li class="f _view_menu_file_photo"><a href="#" class="_link_left_photo"><span class="ico_area ia2"><span class="ico"><span class="im">&nbsp;</span><span class="vm_num" style="display:none;"><em class="_num">-</em><span class="vmt vmt_l">&nbsp;</span><span class="vmt vmt_r">&nbsp;</span></span></span><span class="name">사진</span></span></a></li>
+								<li class="_view_menu_file_music"><a href="#" class="_link_left_music"><span class="ico_area ia1"><span class="ico"><span class="im">&nbsp;</span><span class="vm_num" style="display:none;"><em class="_num">-</em><span class="vmt vmt_l">&nbsp;</span><span class="vmt vmt_r">&nbsp;</span></span></span><span class="name">음악</span></span></a></li>
+								<li class="_view_menu_file_movie"><a href="#" class="_link_left_movie"><span class="ico_area ia3"><span class="ico"><span class="im">&nbsp;</span><span class="vm_num" style="display:none;"><em class="_num">-</em><span class="vmt vmt_l">&nbsp;</span><span class="vmt vmt_r">&nbsp;</span></span></span><span class="name">동영상</span></span></a></li>
+								<li class="_view_menu_file_doc"><a href="#" class="_link_left_doc"><span class="ico_area ia4"><span class="ico"><span class="im">&nbsp;</span><span class="vm_num" style="display:none;"><em class="_num">-</em><span class="vmt vmt_l">&nbsp;</span><span class="vmt vmt_r">&nbsp;</span></span></span><span class="name">문서</span></span></a></li>
+								</ul>
+                                <div class="photo_info">
+                                    <a href="#" class="_btn_photo_info">
+                                        <span class="bg_t"></span>
+                                        <span class="axis"></span>
+									<span class="photo_lately">
+										<strong class="lately">최근 사진</strong><em class="_latestphoto">0</em>장<br>
+										<span class="_autophotowrap"><strong class="auto">자동으로 올린 사진</strong><em class="_autophoto">0</em>장</span>
+									</span>
+                                        <span class="arrow"></span>
+                                    </a>
+                                </div>
+							</div>
+                            <!-- 내 N드라이브 -->
+		                    <div class="section_art filetree_art _normal_tree _left_navigation _context_menu_area _dnd_album">
+                                <!-- [D] 선택시 .click 클래스 추가 -->
+                                <div class="tit_s"><a href="#" class="_folding_myndrive"><em class="l_bu"><span class="blind">접기/펴기</span></em>내 N드라이브</a></div>
+
+		                        <!-- [D] 마우스오버시 h3에 ovr 클래스 추가 -->
+		                        <!-- [D] 클릭시 h3에 click 클래스 추가 -->
+		                        <h3 class="menu_tit _view_menu_ndrive_root _root _tree_root _droparea">
+                                    <span class="ml_t"><span class="ml_ico ml_nd1">&nbsp;</span><a class="ma _link_left_root" href="#"><strong class="_root _context_menu_area" onmouseover="nhn.NDrive.Layout.LeftNavigation.underline(this,true)" onmouseout="nhn.NDrive.Layout.LeftNavigation.underline(this,false)">N드라이브</strong></a><span class="byte_area"><em class="total_byte _used _open_manager"><span class="_used_space">0MB</span></em><span class="hipen">|</span><em class="basic_byte _open_manager _total_space">30GB</em></span></span>
+                                </h3>
+		                        <div class="list_filetree fold_hide _view_menu_ndrive_tree_container">
+		                            <ul id="tree">
+		                            <!-- [D] 하위폴더가 열린 경우 button태그에 open_child 클래스 추가 -->
+		                            <!-- [D] 선택된 폴더 는 a태그에 selected 클래스 추가 -->
+		                            </ul>
+		                        </div>
+		                        <h3 class="basket menu_tit _view_menu_trashbox _trashbox"><span class="ml_t"><span class="ml_ico ml_nd2">&nbsp;</span><a class="ma _droparea _trashbox _basket_ani _link_left_trashbox" href="#" onmouseover="nhn.NDrive.Layout.LeftNavigation.underline(this,true)" onmouseout="nhn.NDrive.Layout.LeftNavigation.underline(this,false)">휴지통</a><span class="case_mb _case_mb"></span><a href="#" class="btn_clean _btn_clean _link_left_trashbox_all_remove">비우기</a></span></h3>
+		                    </div>
+                            <!-- //내 N드라이브 -->
+		                    <!-- Works -->
+							<div class="section_art filetree_art _works_tree _left_navigation _context_menu_area" style="display:none">
+                                <div class="tit_s"><a href="#" class="_folding_works"><em class="l_bu"><span class="blind">접기/펴기</span></em>네이버 Works </a></div>
+								<!--
+								<h3 class="menu_tit _view_menu_shared_folder"><span class="ml_t"><span class="ml_ico ml_sh1">&nbsp;</span><a class="ma" href="#"><strong>공유받은 폴더</strong></a><span class="add_ml">&nbsp;<span class="hipen">|</span>&nbsp;<a href="#" class="_new_shared_list">신규<em class="_count">0</em></a></span></span></h3>
+								 -->
+								<!-- [D] 마우스오버시 ovr 클래스 추가 -->
+								<!-- [D] 클릭시 click 클래스 추가 -->
+								<!-- <h4 class="h_lft_g1"><div class="hl_type _view_menu_shared_folder"><strong>공유받은 폴더</strong><span class="hipen" style="display:none;">|</span><span class="n_numb _new_shared_list" style="display:none;">신규<em class="_count">0</em></span></div></h4>  -->
+								<div class="list_filetree wk_list fold_hide _view_menu_ndrive_tree_container_works">
+								    <ul class="tree_works"><!-- 폴더펼침 아이콘은 div에 tree-selected 주면 자동으로 바뀝니다 -->
+								<!-- [D] 하위폴더가 열린 경우 button태그에 open_child 클래스 추가 -->
+								<!-- [D] 선택된 폴더 는 a태그에 selected 클래스 추가 -->
+								    </ul>
+								</div>
+							</div>
+							<!--// Works -->
+		                    <div class="section_art section_art_share filetree_art _shared_tree _left_navigation _context_menu_area _dnd_album">
+                                <div class="tit_s"><a href="#" class="_folding_share"><em class="l_bu"><span class="blind">접기/펴기</span></em>공유</a></div>
+								<h3 class="menu_tit first _view_menu_shared_folder">
+                                    <button class="tree-button">+</button>
+                                    <span class="ml_t"><span class="ml_ico ml_sh1">&nbsp;</span><a class="ma _sharedroot _link_left_sharedroot" href="#"><strong onmouseover="nhn.NDrive.Layout.LeftNavigation.underline(this,true)" onmouseout="nhn.NDrive.Layout.LeftNavigation.underline(this,false)">공유받은 폴더</strong></a><span class="add_ml"><a href="#" class="_link_left_invite_shared_list">신규<em class="_count">0</em></a></span></span>
+                                </h3>
+
+		                        <!-- [D] 마우스오버시 ovr 클래스 추가 -->
+		                        <!-- [D] 클릭시 click 클래스 추가 -->
+		                        <!-- <h4 class="h_lft_g1"><div class="hl_type _view_menu_shared_folder"><strong>공유받은 폴더</strong><span class="hipen" style="display:none;">|</span><span class="n_numb _new_shared_list" style="display:none;">신규<em class="_count">0</em></span></div></h4>  -->
+		                        <div class="list_filetree fold_hide _view_menu_ndrive_tree_container_shared">
+		                            <ul id="tree_shared"><!-- 폴더펼침 아이콘은 div에 tree-selected 주면 자동으로 바뀝니다 -->
+		                            <!-- [D] 하위폴더가 열린 경우 button태그에 open_child 클래스 추가 -->
+		                            <!-- [D] 선택된 폴더 는 a태그에 selected 클래스 추가 -->
+		                            </ul>
+		                        </div>
+		                        <h3 class="menu_tit _view_menu_sharing_folder">
+                                    <span class="ml_t"><span class="ml_ico ml_sh2">&nbsp;</span><a class="ma _link_left_sharingroot" href="#"><strong onmouseover="nhn.NDrive.Layout.LeftNavigation.underline(this,true)" onmouseout="nhn.NDrive.Layout.LeftNavigation.underline(this,false)">공유한 폴더/파일</strong></a></span>
+                                </h3>
+								<h3 class="menu_tit _view_menu_shared_album">
+                                    <span class="ml_t"><span class="ml_ico ml_al1">&nbsp;</span><a class="ma _link_left_shared_album" href="#"><strong onmouseover="nhn.NDrive.Layout.LeftNavigation.underline(this,true)" onmouseout="nhn.NDrive.Layout.LeftNavigation.underline(this,false)">공유받은 앨범</strong></a><span class="add_ml">&nbsp;<a href="#" class="_shared_newalbum" style="display:none">신규<em>0</em></a></span></span>
+                                </h3>
+								<h3 class="menu_tit last _view_menu_sharing_album">
+                                    <span class="ml_t"><span class="ml_ico ml_al2">&nbsp;</span><a class="ma _link_left_sharing_album" href="#"><strong onmouseover="nhn.NDrive.Layout.LeftNavigation.underline(this,true)" onmouseout="nhn.NDrive.Layout.LeftNavigation.underline(this,false)">공유한 앨범</strong></a></span>
+                                </h3>
+		                    </div>
+		                    <!-- 최근업데이트, 최근열어본, 중요표시한 파일 보기 -->
+		                    <div class="section_art _left_navigation">
+	                            <ul class="menu_add">
+	                            <!-- [D] 마우스오버시 li에 ovr 클래스 추가 -->
+	                            <!-- [D] 클릭시 li에 click 클래스 추가 -->
+	                            <!-- <li class="_view_menu_trashbox _trashbox"><a href="#" class="bu1 _droparea _collection _basket_ani basket_ani basket_ani1 _trashbox">휴지통</a></li> -->
+	                            <!-- <li><a href="http://photo.ndrive.naver.com" onclick="clickcr(this,'lef.photo','','',event);" target="_blank" class="bu6 _open_nphoto">사진 모아보기</a></li> -->
+	                            <li class="_view_menu_latest_update_file"><span class="ml_t"><span class="ml_ico ml_bu1">&nbsp;</span><a href="#" class="ma _droparea _collection _link_left_latest_update" onmouseover="nhn.NDrive.Layout.LeftNavigation.underline(this,true)" onmouseout="nhn.NDrive.Layout.LeftNavigation.underline(this,false)">최근 업데이트 된 파일 보기</a><span class="new_update _new_update" style="display:none;">&nbsp;</span></span></li>
+	                            <li class="_view_menu_latest_open_list"><span class="ml_t"><span class="ml_ico ml_bu2">&nbsp;</span><a href="#" class="ma _droparea _collection _link_left_latest_open" onmouseover="nhn.NDrive.Layout.LeftNavigation.underline(this,true)" onmouseout="nhn.NDrive.Layout.LeftNavigation.underline(this,false)">최근 열어 본 파일 보기</a></span></li>
+	                            <li class="_view_menu_important_file"><span class="ml_t"><span class="ml_ico ml_bu3">&nbsp;</span><a href="#" class="ma _droparea _collection _link_left_important_file" onmouseover="nhn.NDrive.Layout.LeftNavigation.underline(this,true)" onmouseout="nhn.NDrive.Layout.LeftNavigation.underline(this,false)">중요 표시한 파일/폴더 보기</a></span></li>
+	                            <!-- <li class="_view_menu_naver_word_list"><a href="#" class="bu5 _droparea _collection">네이버 워드 문서 보기</a></li> -->
+	                            </ul>
+		                    </div>
+							<!-- 다운로드 배너 -->
+		                    <div class="section_art sec_last _left_navigation">
+								<dl class="ndrive_dl">
+								<dt class="blind">N드라이브 관련 다운로드</dt>
+								<dd class="ndl_bt"><a href="http://tools.naver.com/service/ndrive/index.nhn" class="_view_menu_addon"><span class="ic_bg"></span><em>N드라이브 탐색기</em></a></dd>
+								<dd class="ndl_bt2"><a target="_blank" onclick="clickcr(this,'lic.mobileapp','','',event);window.plugins.exec('MobileAppImpartation.send');return false;" href="http://mobile.naver.com/service/ndrive" class="_view_menu_mobile"><span class="ic_bg"></span><em>N드라이브 모바일앱</em></a></dd>
+								<dd class="ndl_bt4 rig"><a onclick="clickcr(this,'lic.viwer','','',event); window.open('http://tools.naver.com/service/photoviewer/index.nhn'); return false;" target="_blank" href="http://photom.naver.com/home/index.nhn"><span class="ic_bg"></span><em>포토뷰어</em></a></dd>
+								<dd class="ndl_bt6"><a class="_view_menu_photo_print" target="_blank" href="http://photoprint.naver.com/index.nhn"><span class="ic_bg"></span><em>포토인화</em></a></dd>
+								</dl>
+							</div>
+							<!-- Play N드라이브 -->
+							<div class="section_art sec_last _left_navigation _play_ndrive" style="display:none;">
+								<!-- [D] 미션을 수행중 날짜가 나올경우 .st 클래스 추가-->
+								<div class="play_baner">
+									<a href="#" class="play_baner_group">
+									<p class="blind">미션을 수행하면 네이버 마일리지를 적립해 드려요!</p>
+									<span href="#" class="play_btn">자세히보기</span>
+									<!-- [D]날짜가 3일 이하로 남았을경우 .ca 클래스 추가 -->
+									<strong class="day _limit_date">24</strong>
+									</a>
+								</div>
+							</div>
+							<div class="section_art bizinfo_side">
+                            <p>사업자등록번호 : 220-81-62517</p>
+                            <p>통신판매업 신고번호 : 경기 성남 <br/>제 2006-692호</p>
+                            <p class="named">대표이사 : 김상헌</p>
+                            <p>대표전화 : 1588-3820</p>
+                            <p>주소 : 경기도 성남시 분당구 불정로6 <br/>그린팩토리</p>
+                            <ul class="bizinfo_lst">
+                            <li><a href="http://www.naver.com/rules/service.html" target="_blank">이용약관</a></li>
+                            <li><a href="http://www.ftc.go.kr/info/bizinfo/communicationList.jsp" target="_blank">사업자등록정보</a></li>
+                            <li><a href="http://www.naver.com/rules/privacy.html" target="_blank">개인정보 취급방침</a></li>
+                            </ul>
+                        </div>
+                        </div>
+	                </div>
+
+                    <!-- [D] 개발 적용시 ID 는 삭제해주세요 마크업 확인용입니다.
+                            미가입자노출  .works_ban_v2 클래스 추가 -->
+                    <div class="works_ban">
+                        <a href="#" class="go_works _left_works_admin"><span class="works_ic"></span><strong>네이버 Works 관리</strong></a>
+                        <a href="#" class="go_works type_2 _left_works"><span class="works_ic"></span><span class="tx_type2">기업 단체 파일관리는 </span><strong>네이버 Works!</strong></a>
+                        <a href="#" class="bt_help _left_works_help">도움말</a>
+                    </div>
+	            </div>
+	            <!-- 좌측영역에서 사용하는 딤드레이어 -->
+	            <div id="snb_dimmed" style="display:none;position:absolute;z-index:1000;top:0;left:0;width:100%;height:100%;_height:3000px;background:#000;opacity:0.3;filter:alpha(opacity=30);"></div>
+	            <!-- 좌측영역에서 사용하는 딤드레이어 //-->
+	        </div>
+	        <!-- //Left Navigation -->
+	    </div>
+	    <!-- //Left Nav -->
+    </div>
+
+	<!-- //Left -->
+	<div id="section_cen">
+	<div id="section_cen_fix">
+		<!-- right Area -->
+		
+
+
+
+
+
+<!-- Content List  -->
+<div id="content" class="_content">
+
+	<!-- N드라이브 -->
+	<div id="ndrive" class="ndrive" style="display:none;">
+
+		<!-- 상단 고정영역 -->
+		<div id="cont_fix_area">
+
+			<div class="ct_area _layout_content_top">
+				<!-- 상단 띠배너 -->
+				<div id="top_banner" class="cmn_promotion_image _top_banner" style="display:none;"></div>
+
+				<div class="path_search _content_top _droparea">
+                    <a href="#" class="btn_fold _btn_navigation_fold"><span class="spr"></span><span class="blind">폴더목록영역 접기/펴기</span></a>
+					<!-- Search Area -->
+					<div class="left_path">
+						<div class="search_area _quick_search">
+							<fieldset>
+							<legend>검색</legend>
+								<input type="text" id="search_txt" name="p_search" accesskey="s" class="input_txt _textbox_quick_search"/>
+								<a href="#" class="search_btn _link_search_btn_quick_search"><label for="search_txt" class="blind">검색</label></a>
+							</fieldset>
+						</div>
+						<a href="#" class="detail _link_search_detail_search_toggle" title="상세">상세&nbsp;<span class="ico_bu"></span></a>
+						<a href="#" class="search_set" onclick="nhn.NDrive.Layout.openBodySearchManager();return false;" style="display:none">검색설정</a>
+					</div>
+					<!-- //Search Area -->
+
+					<!-- 말줄임용: width 필요 -->
+					<h2 class="path ellipsis _location" style="width:335px;left:282px;height:14px;">
+						<span class="hipen2" style="display:none;">|</span>
+						<span class="_works_info" style="display:none;"><span class="bu _works_root_icon"></span><strong class="l_tit _works_name"></strong><span class="hipen2 _works_hipen">|</span></span>
+						<strong class="l_tit _current_path"></strong>
+						<span class="_back_music_collection" style="display:none;"><span class="prev_hipen">|</span>&nbsp;<span class="prev_page"><span class="ico">&nbsp;</span><a href="#">이전</a></span></span>
+						<span class="r_art _shared_info" style="display:none;"><span class="bu _ownership"><em class="blind">읽기 (파일들의 열람만 가능)</em></span><span class="hipen">|</span><span class="path_2t _owner_name"></span></span>
+                		<span class="r_art _sharing_info" style="display:none;"><a class="bu _sharing_manager"></a><span class="hipen">|</span><span class="path_2t _sharing_msg"></span></span>
+						<span class="r_art _sharing_url" style="display:none;"><span class="path_2t"><a href="#" class="bu bu_turl"><em class="blind">URL</em></a></span></span>
+						<span class="_works_capacity"></span>
+					</h2>
+					<div style="display:none;" class="search_layer _msg_for_body_search">
+						<a class="btn_cont" href="#" onclick="nhn.NDrive.Layout.openBodySearchManager();return false;">스마트한 본문 검색을 설정해 보세요!</a>
+						<p class="p_ch"><input type="checkbox" id="se_che" class="_checkbox"><label for="se_che" class="_close_msg">다시보지않기</label></p>
+						<a href="#" class="btn_cls _close_msg"><em class="blind">다시보지않기</em></a>
+						<span class="ic"></span>
+					</div>
+					<div style="display:none;" class="search_layer search_layer_works _msg_for_works_body_search">
+						<a class="btn_cont" href="#" onclick="nhn.NDrive.Layout.openBodySearchWorksGuide();clickcr(this,'top.srhlayer','','',event);return false;">Works 본문 검색을 사용해 보세요!</a>
+						<p class="p_ch"><input type="checkbox" id="se_che" class="_checkbox"><label for="se_che" class="_close_msg">다시보지않기</label></p>
+						<a href="#" class="btn_cls _close_msg"><em class="blind">다시보지않기</em></a>
+						<span class="ic"></span>
+					</div>
+					<h2 class="path ellipsis mobile_h2">활용안내</h2>
+					<div class="right_path_notice">
+						<!-- Address and Notice Area -->
+						<div class="info _info">
+							<div class="total _selecting_count" style="display:none;"></div>
+						</div>
+						<!-- //Address and Notice Area -->
+						<!-- Loading Layer Area  -->
+						<div class="layer_loading_path _loading_layer" style="display:none;">
+							<img width="25" height="7" style="vertical-align:middle;" alt="" src="http://static.naver.net/pwe/ndrive/deskhome/loading_blue.gif">진행중...
+						</div>
+						<!-- //Loading Layer Area -->
+						<!-- Alert Layer Area -->
+						<div class="alert _UserInteractionNotificationView">
+							<p>
+								<span class="_message"></span>
+								<button class="_close" type="button"><span class="blind">닫기</span></button>
+								<!--[if lte IE 6.5]><span class="min_width"></span><![endif]-->
+							</p>
+						</div>
+						<!-- //Alert Layer Area -->
+					</div>
+				</div>
+
+				<!-- 상세검색 옵션 레이어-->
+				<!-- [D] 슬라이딩 애니메이션시 overflow속성도 제어바랍니다. -->
+				<div class="detail_layer _detail_search_view" style="display:none;"></div>
+				<!-- //상세검색 옵션 레이어-->
+
+				<!-- 프로모션 -->
+				<div class="cmn_promotion_text _promotion _droparea" style="display:none">
+					<div class="rolling_container"></div>
+					<button class="prom_close _click_close" title="닫기"><span>닫기</span></button>
+				</div>
+				<!-- //프로모션 -->
+				<!-- 신규 초대받은 공유폴더 -->
+				<div class="promotion _promotion_invite_share _droparea" style="display:none">
+					<div class="pr_overcont">
+						<div class="pr_overcont_pd _rolling_list">
+							<ul class="pr_overlist _invete_list"></ul>
+						</div>
+						<span class="pr_btn2 _button_prev_next" style="display:none;"><a href="#" class="prb_prev _btn_prev"><em class="blind">이전</em></a><a href="#" class="prb_next _btn_next"><em class="blind">다음</em></a></span>
+					</div>
+					<a href="#" class="prmt_close _close" title="닫기"><span class="blind">닫기</span></a>
+				</div>
+				<!-- //신규 초대받은 공유폴더 -->
+
+				<!-- Function Button Area -->
+				<div class="button_sort _function_button _droparea">
+					<ul class="button _normal_button">
+					<li class="_upload task_blind"><button><span class="bu bu_up2"></span><span class="tx"><strong class="bbold">올리기</strong></span></button></li>
+                    <!-- [D] 크롬업로드일경우 노출  -->
+                    <li class="_new_upload task_blind"><button><span class="bu bu_up2"></span><span class="tx"><strong class="bbold">올리기</strong></span><span class="bu bu_layer _open_menu"></span></button>
+                        <input type="file" multiple="multiple" class="up_file_all">
+                        <div class="rightmenu_layer _upload_menu_layer" style="display: none;">
+                            <ul>
+                                <li class="imp_li"><a href="#">파일 올리기</a> <input type="file" multiple="multiple" title="파일 올리기"></li>
+                                <li class="imp_li"><a href="#">폴더 올리기</a> <input type="file" webkitdirectory="webkitdirectory" mozdirectory="mozdirectory" directory="directory" title="폴더 올리기"></li>
+                            </ul>
+                        </div>
+                    </li>
+
+					<li class="_download task_blind"><button><span class="bu bu_down"></span><span class="tx"><strong>내려받기</strong></span></button></li>
+					<li class="_new_folder task_blind"><button><span class="tx">새폴더</span></button></li>
+					<li class="_clear_trashbox task_blind"><button><span class="tx">휴지통 비우기</span></button></li>
+					<li class="_restore task_blind"><button><span class="tx">복원</span></button></li>
+					<li class="rela_menu _edit_menu">
+						<button class="_edit_button"><span class="tx">편집</span><span class="bu bu_layer"></span></button>
+						<!-- 편집 레이어 -->
+						<div class="_editing_menu_layer"></div>
+						<!--// 편집 레이어 -->
+					</li>
+					<li class="_delete task_blind"><button><span class="tx">삭제</span></button></li>
+					<li class="alb_btn tbtn_alb _new_album" style="display: list-item; "><button class="_button"><span class="tx">앨범에 추가</span><span class="bu bu_layer"></span></button>
+						<div class="ly_s_alb _bubblelayer_taskbar_guide" style="display:none;">
+							<p class="blind">사진을 선택해 멋진 앨범을 만들어보세요!</p>
+							<a href="#" class="ly_alb_btype _bubble_new_album">앨범에 추가</a>
+							<a href="#" class="ly_alb_btype2 _bubble_new_album">앨범에 추가</a>
+							<p class="txt_check"><input type="checkbox" class="_no_tip_checkbox"> <label class="_no_tip_checkbox">다시보지않기</label></p>
+							<a href="#" class="cls _close">닫기</a>
+						</div>
+					</li>
+					<li class="bar_line rela_menu _share task_blind">
+						<button class="_share_split"><span class="bu bu_foldershare"></span><span class="tx"><strong>공유</strong></span><span class="bu bu_layer"></span></button>
+						<!-- 공유하기 레이어 -->
+						<div class="rightmenu_layer _share_menu_layer" style="display:none;">
+							<ul class="imp_ly2 _sharing">
+								<li><a href="#" class="_folder"><em class="bu"></em>공유 멤버 초대</a></li>
+								<li><a href="#" class="_url"><em class="bu"></em>공유 URL 만들기</a></li>
+								<li><a href="#" class="u_file _file_url"><em class="bu"></em>URL 보내기</a></li>
+							</ul>
+						</div>
+						<!--// 공유하기 레이어 -->
+					</li>
+					<li class="bar_line rela_menu _share_cancel task_blind">
+						<button><span class="tx">공유해제</span></button>
+					</li>
+					<li class="bar_line _file_url_share task_blind"><button><span class="bu bu_foldershare"></span><span class="tx"><strong>공유</strong></span></button></li>
+					<li class="rela_menu _send_menu">
+						<button class="_send_button"><span class="tx">보내기</span><span class="bu bu_layer"></span></button>
+						<!-- 보내기 레이어 -->
+						<div class="_sending_menu_layer"></div>
+						<!--// 보내기 레이어 -->
+					</li>
+					<li class="bar_line _works_folder_share task_blind"><button title="특정 구성원에게만 폴더 접근 허용"><span class="bu bu_set_share"></span><span class="tx"><strong>권한설정</strong></span></button></li>
+					<li class="bar_line rela_menu _select_doc_type task_blind">
+						<!-- 문서유형 선택 -->
+						<button class="" id="btn_select_doc_type"><span class="tx">문서 유형</span><span class="bu bu_layer"></span></button>
+						<!--// 문서유형 선택 -->
+					</li>
+					<li class="bar_line _edit_photo task_blind"><a class="sort_a " href="#"><span class="tx">사진 편집</span></a></li>
+					<li class="bar_line _doc_viewer task_blind"><button type="button"><span class="tx">문서뷰어로 열기</span></button></li>
+					<li class="bar_line _share_manager task_blind"><button type="button"><span class="tx">권한 관리</span></button></li>
+					<li class="bar_line _member_list task_blind"><button type="button"><span class="tx">멤버 보기</span></button></li>
+					</ul>
+
+					<!-- 신규 공유 초대받은 화면의 버튼 -->
+					<ul class="button _invite_share_button task_blind">
+					<li><button class="_btn_accept"><span class="tx"><strong>공유 수락</strong></span></button></li>
+					<li><button class="_btn_reject"><span class="tx">거절</span></button></li>
+					</ul>
+
+					<!-- 뷰타입 설정 버튼들 -->
+					<div class="right_sort _view_mode">
+						<div class="sort_tt _msg_music_collection" style="display:none;"><em class="txt">앨범과 아티스트 별로 모아서 보세요!</em><a class="layer_close" href="#" onclick="nhn.NDrive.Layout.MusicCollection.closeMsg(this);return false;"><em>레이어 닫기</em></a><span class="arrow">&nbsp;</span><span class="border border_l">&nbsp;</span><span class="border border_r">&nbsp;</span></div>
+						<div class="ly_sort_works _msg_works_trashbox" style="display:none;"><em>&nbsp;</em> Works 폴더의 데이터 보호를 위해, 휴지통 비우기는 관리자/부관리자만 실행 가능합니다</div>
+						<ul class="sort_view _music" style="display:none;">
+						<li class="m_ty1 _album"><a title="앨범별 보기" href="#">앨범별 보기</a></li>
+						<li class="m_ty2 _artist"><a title="아티스트별 보기" href="#">아티스트별 보기</a></li>
+						</ul>
+						<ul class="_default">
+						<li class="v_ty1 _detail"><a title="자세히 보기" href="#">자세히 보기</a></li>
+						<li class="v_ty2 _thumbnail"><a title="아이콘 보기" href="#">아이콘 보기</a></li>
+						<li class="v_ty3 _smallthumbnail"><a title="작은 썸네일 보기" href="#">작은 썸네일 보기</a></li>
+						<li class="v_ty4 _largethumbnail"><a title="큰 썸네일 보기" href="#">큰 썸네일 보기</a></li>
+						</ul>
+					</div>
+
+				</div>
+				<!-- //Function Button Area -->
+
+				<div class="datail_layer_tit _search_result_info">
+					<h4><strong>파일 검색 결과</strong><span class="tit _search_keyword"></span></h4>
+					<p class="btn_more_se _go_body_search" style="display:none;"><a href="#" class="_go_body_search_more_view">본문 검색 결과 보기</a></p>
+					<p class="btn_more_se _go_file_search" style="display:none;"><a href="#" class="_go_file_search_more_view">파일 검색 결과 보기</a></p>
+				</div>
+			</div>
+
+		</div>
+		<!-- //상단 고정영역 끝 -->
+
+
+		<!-- 중앙 영역 -->
+		<div id="cont_flex_area">
+			<div id="ndrive_list_area" class="lrcont_area reply_open _layout_content_middle"><!-- [D] 공유글 열렸을 시 reply_open 클래스 추가 -->
+				<div class="lcont">
+					<div class="lcont_fix" id="ndrive_list_fix">
+
+						<!-- Detail View Area -->
+						<div class="type_list _type_list" style="display:none;">
+							<div class="datail_layer_tit _search_keyword">
+								<h4><strong>파일 검색 결과</strong><span class="tit _keyword"></span></h4>
+							</div>
+							<div class="list_sort_tbl">
+								<ul class="list_head _list_head _droparea _list_sort"></ul>
+							</div>
+							<div class="type_list_box _droparea _context_menu_area _list_scroll">
+								<ul class="list_body_group _list _droparea"></ul>
+							</div>
+							<p class="btn_more_se _result_more_view" style="display:none;"><a href="#" class="_go_file_search_more_view">파일 검색 결과 더보기</a></p>
+						</div>
+
+						<div class="type_list search_box search_box_li _type_body_search" style="display:none;">
+							<div class="datail_layer_tit _search_keyword">
+								<h4><strong>본문 검색 결과</strong><span class="tit _keyword"></span></h4>
+								<a class="btn_works_use _btn_use_works_folder" href="#"><span class="bu w_ic"></span>본문 검색 사용 중인 폴더</a>
+							</div>
+							<div class="list_sort_tbl">
+								<ul class="list_head _list_head _droparea _list_sort"></ul>
+							</div>
+							<div class="type_list_box _context_menu_area _list_scroll">
+								<ul class="list_body_group2 _list _droparea"></ul>
+							</div>
+							<p class="btn_more_se _result_more_view" style="display:none;"><a href="#" class="_go_body_search_more_view">본문 검색 결과 더보기</a></p>
+						</div>
+						<!-- //Detail View Area -->
+
+						<!-- Thumbnail View Area -->
+						<div class="_type_thumb _droparea" style="display:none;">
+							<div class="list_sort _droparea _list_sort">
+								<span class="check_bar"><input type="checkbox" class="input_check _link_list_all_check" id="thumbnail_check_all"><label for="thumbnail_check_all" class="blind">전체 선택</label></span>
+								정렬기준 : <a href="#" class="_sort_subject"></a>- <a href="#" class="dn _sort_order"><span class="bu"></span></a>
+								<div class="right_ar _shareinfo_link" style="display:none;">
+									<a class="sc _member" href="#">초대 멤버 관리</a><span>-</span> <a class="dn_s _history" href="#">공유 히스토리 보기</a>
+								</div>
+							</div>
+							<ul class="type_thumb _list _context_menu_area _droparea"></ul>
+						</div>
+						<!-- //Thumbnail View Area -->
+
+						<!-- PhotoWall View Area -->
+						<div class="_type_photowall _droparea" style="display:none;">
+							<div class="list_sort _droparea _list_sort">
+								<span class="check_bar"><input type="checkbox" class="input_check _link_list_all_check" id="photowall_check_all"><label for="photowall_check_all" class="blind">전체 선택</label></span>
+								정렬기준 : <a href="#" class="_sort_subject"></a>- <a href="#" class="dn _sort_order"><span class="bu"></span></a>
+								<div class="right_ar _shareinfo_link" style="display:none;">
+									<a class="sc _member" href="#">초대 멤버 관리</a><span>-</span> <a class="dn_s _history" href="#">공유 히스토리 보기</a>
+								</div>
+							</div>
+							<div class="_photo_wall">
+								<div class="type_thumnail_area _pt_box_wrap _context_menu_area _droparea">
+									<ul class="type_thumnail _photowall_box _list"></ul>
+								</div>
+							</div>
+						</div>
+						<!-- //PhotoWall View Area -->
+
+						<!-- 공유 초대 받은 목록 -->
+						<div class="in_scroll _type_invite_share">
+							<div class="list_sort _list_sort">
+								<span class="check_bar"><input type="checkbox" class="input_check _link_list_all_check" id="invite_check_all"><label for="invite_check_all" class="blind">전체 선택</label></span>
+								정렬기준 : <a href="#" class="_sort_subject"></a>- <a href="#" class="up _sort_order"><span class="bu"></span></a>
+							</div>
+							<ul class="invite_share _list"></ul>
+						</div>
+						<!-- //공유 초대 받은 목록 -->
+
+						<!-- album View Area -->
+						<div class="_type_album">
+							<!-- 앨범 모아보기 -->
+							<ul class="type_album _list _context_menu_area"></ul>
+							<!-- 음악목록 By 앨범 보기 -->
+							<div class="type_list album_list _music_list" style="display:none;">
+								<div class="list_sort_tbl">
+									<ul class="list_head _list_head _droparea _list_sort"></ul>
+								</div>
+								<div class="type_list_box _list_body _droparea _list_scroll"></div>
+							</div>
+							<!-- //음악목록 By 앨범 보기 -->
+						</div>
+						<!-- //album View Area -->
+
+						<!-- artist View Area -->
+						<div class="_type_artist">
+							<!-- 아티스트 모아보기 -->
+							<ul class="type_album _list _context_menu_area"></ul>
+							<!-- 앨범 By 아티스트 보기 -->
+							<div class="type_list artist_list _music_list" style="display:none;">
+								<div class="list_sort_tbl">
+									<ul class="list_head _list_head _droparea _list_sort"></ul>
+								</div>
+								<div class="type_list_box _list_body _droparea _list_scroll"></div>
+							</div>
+							<!-- //앨범 By 아티스트 보기 -->
+						</div>
+						<!-- //artist View Area -->
+
+					</div>
+				</div>
+				<div class="reply_area _share_memo_frame">
+					<div class="toggle_base">
+						<div class="reply_write nodata _share_memo_write_frame"><!-- [D] 입력내용 없을 시 reply_write 클래스에 nodata 클래스 추가 -->
+							<fieldset>
+							<legend>글쓰기</legend>
+							<span class="write_txt"><span class="write_inp"><span><textarea rows="1" cols="1" class="_share_memo_write_form _EVENT(SHAREMEMO_WRITE_TEXTAREA)" _value="보고 있는 폴더에 새 글을 남겨 주세요.">보고 있는 폴더에 새 글을 남겨 주세요.</textarea></span></span><span class="write_btn"><a href="#" title="글 등록" class=" _EVENT(SHAREMEMO_WRITE)">확인</a></span></span>
+							</fieldset>
+						</div>
+						<div class="reply_scroll _share_memo_list_frame">
+							<div class="reply_zoom _share_memo_content_frame">
+								<div class="reply_bot _share_memo_btn_moreview"><a href="#">이전 글 더보기</a></div>
+								<!-- 내용 있을 때 -->
+								<ul class="reply_list _share_memo_list _listContent"></ul>
+								<!-- //내용 있을 때 -->
+
+								<!-- 내용 없을 때 -->
+								<div class="no_reply _share_memo_noreply">
+									공유 폴더와 관련된 정보를 나눠 보세요.<br><br>글을 남기면 네이버me와<br>N드라이브 알림으로<br>폴더를 공유하는 멤버들에게 알려 드립니다.
+								</div>
+								<!-- //내용 없을 때 -->
+
+							</div>
+						</div>
+					</div>
+					<span class="reply_abs"><span class="reply_bg"><a href="#" class="reply_btn _share_memo_btn_toggle"><span class="arrow">&nbsp;</span><em class="close">닫기</em><!-- [D] 덧글이 없을 경우 <em class="open">덧글쓰기</em> --><em class="open">글&nbsp;<strong>28</strong></em></a></span></span><!-- [D] reply_btn 클릭시 lrcont_area 에 reply_open 클래스 토글 -->
+					<span class="toggle"><a href="#" class="_share_memo_btn_toggle2"><em>&nbsp;</em></a></span><!-- [D] 클릭시 lrcont_area 에 reply_open 클래스 토글 -->
+				</div>
+			</div>
+
+			<!-- 공유받은폴더 또는 공유한폴더가 없는경우 -->
+			<div class="share_box_scrl _share_no_list" style="display:none;"></div>
+			<!-- //공유받은폴더 또는 공유한폴더가 없는경우 -->
+
+			<!-- 자동올리기 미설정 안내 화면 노출영역 -->
+			<div class="type_thumnail_area _auto_upload_no_list" style="display:none;top:0"></div>
+			<!-- //자동올리기 미설정 안내 화면 노출영역 -->
+
+			<div class="mobile_ca tabcontrol _content_tabcontrol">
+				<!-- 활용안내 상단 탭메뉴 2011.04.05-->
+				<div class="back_ndrive">
+					<div class="tab_guide" style="display:none">
+						<!-- [D] 클릭시 .on 클래스 추가 -->
+						<a href="#" class="tab_gu tcGuide-tab tcGuide-selected" onclick="return false;"><span>활용안내</span></a>
+						<a href="#" class="tab_ev tcGuide-tab" onclick="return false;"><span>친구 추천 이벤트!</span></a>
+					</div>
+					<a href="#" class="bak_ndrive _btn_back_ndrive">N드라이브로 돌아가기</a>
+				</div>
+				<!-- //활용안내 상단 탭메뉴 -->
+				<!-- 모바일 활용안내 본문 2011.04.05-->
+				<div class="info_guide_group _mobile_guide_panels" style="display:none"></div>
+				<!-- //모바일 활용안내 본문 -->
+			</div>
+
+			<!-- 웍스 사용중지 안내 페이지 -->
+			<div class="error_wk_content _works_stop_domain_content" style="display:none;"></div>
+			<!--// 웍스 사용중지 안내 페이지 -->
+
+			<!-- 아이콘뷰(기존 썸네일뷰) 템플릿 -->
+			<textarea id="ndrive_tmpl_thumb_folder" style="display:none">
+				<li class="{%=data.sItemClass%}" _resourceno="{%=data.sResourceNO%}" title="{%=data.sHtmlTitle%}" _extension="{%=data.sFileType%}">
+					<div class="check">
+						{%=data.sCheckBoxTag%}
+						{%=data.sImportantTag%}
+						{%=data.sSharedTypeTag%}
+					</div>
+					<div class="thumb_box _item_thumb_box {%=data.sDragDropClass%} {%=data.sRightClickClass%} {%=data.sDimClass%}">
+						<table cellspacing="0" cellpadding="0"><tbody><tr><td class="_item_thumb_box {%=data.sDimClass%} {%=data.sUrlShareClass%}">{%=data.sThumbnailTag%}</td></tr></tbody></table>
+						<div class="title">
+							<div class="_item_thumb_box"><a class="_item_thumb_box _link_list_item_filename  _iconthubmnail" href="#" onclick="return false;">{%=data.sRecentUpdateTag%}{%=data.sViewTitle%}</a></div>
+							<p class="rate">{%=data.sSize%}</p>
+						</div>
+						{%=data.sVideoFileTag%}
+						{%=data.sDimmedFileTag%}
+					</div>
+				</li>
+			</textarea>
+
+			<textarea id="ndrive_tmpl_thumb_blank_folder" style="display:none">
+				<li class="_folder _item _droparea" onmousedown="return false;" title="{%=data.sHtmlTitle%}" >
+					<div class="check"></div>
+					<div class="thumb_box _item_thumb_box">
+						<table cellspacing="0" cellpadding="0"><tbody><tr><td class="_item_thumb_box"><p class="bu bu_root_b _item_thumb_box"><span class="blind">{%=data.sHtmlTitle%}</span></p></td></tr></tbody></table>
+						<div class="title _item_thumb_box"><a href="#" class="_link_list_blank_folder">..</a></div>
+					</div>
+				</li>
+			</textarea>
+
+			<!-- 작은썸네일, 큰썸네일 공통 템플릿 -->
+
+			<textarea id="ndrive_tmpl_photowall_thumbnail" style="display:none">
+				<li class="{%=data.sItemClass%}" _resourceno="{%=data.sResourceNO%}" title="{%=data.sHtmlTitle%}" _row="{%=data.nRows%}" _extension="{%=data.sFileType%}">
+					<div style="overflow:hidden; position:relative; float:left; width:{%=frame.width%}px;height:{%=frame.height%}px;" class="thumnail_area {%=data.sNoneItemClass%} _frame_box _item_thumb_box _filedroparea {%=data.sDragDropClass%} _right_click">
+						{%=data.sDimmedFileTag%}
+						<p class="pic">
+							<a href="#" class="_img_box _link_list_thumb_item" style="position:relative;left:{%=image.left%}px;top:{%=image.top%}px;" onclick="return false;"></a>
+						</p>
+						<div class="fil_name">
+							<p class="re_mem _button_group">{%=data.sShareManager%}<span class="{%=data.sFileIconClass%}"></span></p>
+							<span class="name _item_thumb_box _link_list_item_filename _right_click"><em class="{%=data.isNew%}"></em>{%=data.sViewTitle%}</span>
+						</div>
+						<em class="check"></em>
+						<span class="thumb_t"></span>
+						<span class="thumb_l"></span>
+						<span class="thumb_b"></span>
+						<span class="thumb_r"></span>
+						{%=data.sProtect%}
+					</div>
+				</li>
+			</textarea>
+
+			<textarea id="ndrive_tmpl_photowall_doc" style="display:none">
+				<li class="{%=data.sItemClass%}" _resourceno="{%=data.sResourceNO%}" title="{%=data.sHtmlTitle%}" _row="{%=data.nRows%}" _extension="{%=data.sFileType%}">
+					<div style="overflow:hidden; position:relative; float:left; width:{%=frame.width%}px;height:{%=frame.height%}px;" class="thumnail_area {%=data.sNoneItemClass%} _frame_box _item_thumb_box _filedroparea {%=data.sDragDropClass%} _right_click">
+						{%=data.sDimmedFileTag%}
+						<a href="#" class="fil {%=data.sClassType%} {%=data.sShareClass%} _item_thumb_box _link_list_thumb_item" onclick="return false;"><strong class="fil_txt _item_thumb_box">{%=data.sFileType%}</strong>{%=data.sUrlShareTag%}</a>
+						<div class="fil_name">
+							<p class="re_mem _button_group">{%=data.sShareManager%}<span class="{%=data.sFileIconClass%}"></span></p>
+							<span class="name _item_thumb_box _link_list_item_filename _right_click"><em class="{%=data.isNew%}"></em>{%=data.sViewTitle%}</span>
+						</div>
+						<em class="check"></em>
+						<span class="thumb_t"></span>
+						<span class="thumb_l"></span>
+						<span class="thumb_b"></span>
+						<span class="thumb_r"></span>
+						{%=data.sProtect%}
+					</div>
+				</li>
+			</textarea>
+
+			<textarea id="ndrive_tmpl_photowall_folder" style="display:none">
+				<li class="{%=data.sItemClass%}" _resourceno="{%=data.sResourceNO%}" title="{%=data.sHtmlTitle%}" _row="{%=data.nRows%}">
+					<div style="overflow:hidden; position:relative; float:left; width:{%=frame.width%}px;height:{%=frame.height%}px;" class="thumnail_area {%=data.sNoneItemClass%} _frame_box _item_thumb_box {%=data.sDragDropClass%} _right_click">
+						<a href="#" class="fil bu_folder_b2 {%=data.sShareClass%} _item_thumb_box _link_list_thumb_item" onclick="return false;">
+							<span class="blind">파일 폴더</span>
+							{%=data.sCommentCountHtml%}
+							{%=data.sUrlShareTag%}
+						</a>
+						<div class="fil_name">
+							{%=data.sShareManager%}
+							<span class="name {%=data.sShareButtonClass%} _item_thumb_box _link_list_item_filename _right_click"><em class="{%=data.isNew%}"></em>{%=data.sViewTitle%}</span>
+						</div>
+						<em class="check"></em>
+						<span class="thumb_t"></span>
+						<span class="thumb_l"></span>
+						<span class="thumb_b"></span>
+						<span class="thumb_r"></span>
+						{%=data.sProtect%}
+					</div>
+				</li>
+			</textarea>
+
+			<textarea id="ndrive_tmpl_photowall_blank_folder" style="display:none">
+				<li class="_folder _item" title="한폴더 위로" _row="{%=data.nRows%}">
+					<div style="overflow:hidden; position:relative; float:left; width:{%=frame.width%}px;height:{%=frame.height%}px;" class="thumnail_area root_b2 _frame_box _item_thumb_box _droparea _right_clicks">
+						<a href="#" class="fil bu_root_b2 _item_thumb_box _link_list_blank_folder">
+							<span class="blind">상위 이동</span>
+						</a>
+						<div class="fil_name">
+							<span class="name _item_thumb_box _link_list_item_filename _right_click">..</span>
+						</div>
+						<em class="check"></em>
+						<span class="thumb_t"></span>
+						<span class="thumb_l"></span>
+						<span class="thumb_b"></span>
+						<span class="thumb_r"></span>
+					</div>
+				</li>
+			</textarea>
+			
+			<textarea id="ndrive_tmpl_invite_folder" style="display:none">
+				<li class="_item" _inviteno="{%=data.sInviteNO%}" _ownerid="{%=data.sOwnerID%}" _owneridx="{%=data.sOwnerIDX%}" _shareno="{%=data.sShareNO%}" title="{%=data.sHtmlTitle%}">
+					<div class="check">
+						<input type="checkbox" class="input_check _link_list_input_check">
+						<span class="bu bu_{%=data.sOwnership%}"><span class="blind">{%=data.sOwnershipText%}</span></span>
+					</div>
+					<div class="share_file">
+						<div class="thumb_area">
+							<div class="thumb_box">
+								<table cellspacing="0" cellpadding="0"><tbody><tr><td><p class="bu bu_shared_b"><span class="blind">{%=data.sFolderInfoHiddenText%}</span></p></td></tr></tbody></table>
+							</div>
+						</div>
+						<dl class="thumb_detail">
+						<dt>{%=data.sNewTag%}</dt>
+						<dd class="thumb_use">
+						{%=data.sSharedOwnerInfoTag%}
+						<p class="arti"><strong class="dtit">{%=data.sInviteText%}</strong>{%=data.sInviteDate%}</p>
+						</dd>
+						<dd class="button_pos _execute_rsult">
+						<button class="_btn_accept"><span class="tx"><strong>{%=data.sBtnAcceptText%}</strong></span></button><button class="_btn_reject"><span class="tx">{%=data.sBtnRejectText%}</span></button>
+						</dd>
+						</dl>
+					</div>
+				</li>
+			</textarea>
+			
+		</div>
+		<!-- //중앙 영역 끝-->
+
+
+		<!-- 하단 고정영역 -->
+		<div id="cont_aid_area">
+			<!-- Page Navigation -->
+			<div class="paginate _paginate" style="z-index:10000;display:none;">
+				<a href="#" class="pre_end" title="처음"><span class="blind">처음</span></a>
+				<a href="#" class="pre" title="이전"><span class="blind">이전</span></a>
+				<a href="#">11</a>
+				<strong>12</strong>
+				<a href="#">13</a>
+				<a href="#" class="next" title="다음"><span class="blind">다음</span></a>
+				<a href="#" class="next_end" title="끝"><span class="blind">끝</span></a>
+			</div>
+			<!-- //Page Navigation -->
+		</div>
+
+
+	</div>
+	<!-- //N드라이브 -->
+
+	<!-- N포토 -->
+	<div id="nphoto" class="photo" style="display:none;"></div>
+	<!-- //N포토 -->
+
+	<!-- 오른쪽 컨텐츠 영역 딤드 레이어 -->
+	<div id="content_dimmed" style="position:absolute;left:0;top:0;width:100%;height:100%;background:#000;z-index:100;opacity:.3;filter:alpha(opacity=30);display:none;"></div>
+	<!-- 오른쪽 컨텐츠 영역 딤드 레이어 //-->
+
+</div>
+		<!-- //right Area -->
+		
+		<!-- [D] 드레그시 DIM 레이어  -->
+		<div class="drag_layer _dropupload">
+		    <div class="drag_cont">
+		        <div class="drag_img">
+		            <img class="left-doodle" src="https://ssl.pstatic.net/static/pwe/ndrive/deskhome/upload_img1.png">
+		            <img class="right-doodle" src="https://ssl.pstatic.net/static/pwe/ndrive/deskhome/upload_img2.png">
+		        </div>
+		        <p class="drag_txt"><span class="blind"> 이제 파일올리기도 손쉽게! 파일을 여기에 끌어다 놓으면 파일 올리기가 바로 시작됩니다.</span></p>
+		    </div>
+		</div>
+	</div>
+	</div>
+  	<!-- //Content List -->
+	<!-- 중앙영역 딤드 레이어 -->
+	<div id="container_dimmed" style="position:absolute;left:0;top:0;width:100%;height:100%;background:#000;z-index:100;opacity:.3;filter:alpha(opacity=30);display:none;"></div>
+	<!-- 중앙영역 딤드 레이어 //-->
+</div>
+<!-- //container -->
+
+<!-- footer -->
+
+
+
+
+<div id="footer" class="_footer _droparea _no_dimmed">
+	<div class="quick_tools">
+		<!-- [D] 그래프 가로값은 em태그의 width에 %로 입력 -->
+		<span class="capacity _capacity">용량 <span class="grph _capacity_graph_type"><em class="_capacity_graph" style="width:0%"></em></span> <strong><a target="_blank" href="http://ndrive.naver.com/mycapacity.nhn?openerType=main" class="_click_capacity_used _capacity_volume">0MB</a></strong><span class="slash">/</span><em><a target="_blank" href="http://ndrive.naver.com/mycapacity.nhn?openerType=main" class="_click_capacity_max _capacity_total">30GB</a></em><span class="pay _capacity_alarm" style="display:none;"></span></span>
+		<span class="bar">|</span>
+		<a href="http://ndrive.naver.com/payment/user/upgrade.nhn" target="_blank" class="_btn_pay">용량추가<span class="ic_up"></span></a>
+		<span class="bar">|</span>
+		<a href="http://ndrive.naver.com/mycapacity.nhn?openerType=main" target="_blank" class="setup _btn_capacity">환경설정</a>
+		<span class="bar">|</span>
+        <a href="#" class="_btn_skinsetup"><span class="ico_skin"></span>스킨설정</a>
+        <span class="bar">|</span>
+		<a href="#" class="info_p _btn_mobile_guide">활용안내</a>
+	</div>
+	<div class="quick_link">
+		<a href="https://calendar.naver.com/school.nhn" target="_blank">선생님 우대 프로그램</a>
+        <span class="bar">|</span>
+		<a href="/html/operatePrinciple.ko.html" target="_blank">운영원칙</a>
+		<span class="bar">|</span>
+		<a href="http://ndrive.naver.com/notice.nhn" target="_blank" class="_btn_admin">공지사항</a>
+        <span class="bar">|</span>
+        <a target="_blank" href="https://help.naver.com/support/service/main.nhn?serviceNo=636" onclick="clickcr(this,'fot.help','','',event);">고객센터</a>
+		<span class="bar">|</span>
+		<a target="_blank" href="https://help.naver.com/support/contents/contents.nhn?serviceNo=636&categoryNo=2394" onclick="clickcr(this,'fot.ask','','',event);">결제문의</a>
+		<span class="bar">|</span>
+        <a href="http://help.naver.com/ops/step1/query.nhn" target="_blank" onclick="clickcr(this,'fot.report','','',event);" >신고하기</a>
+	</div>
+	<div class="setting_layer _bubblelayer_waste" style="display:none">
+		<p class="sl_txt">휴지통 자동삭제 기간을 설정하면<br>설정한 기간 뒤에 휴지통이 자동으로 비워집니다.</p>
+		<p class="no_sl_tip"><input type="checkbox" class="_no_tip_checkbox" id="no_sltip"><label for="no_sltip">다시보지않기</label></p>
+	</div>
+	<div class="setting_layer_pay _bubblelayer_pay" style="display:none">
+		<div class="ly_txt">
+			<p class="_pay_enough _move"><a href="#" style="display:inline-block;">1TB 상품이 출시 되었습니다.<br />
+				<span>월 1만원으로 용량 걱정없이 편하게 N드라이브를 사용해보세요.<em class="bu"></em></span></a>
+			</p>
+			<p class="_pay_alert _move" style="display:none;"><a href="#" style="display:inline-block;"><span class="point1">저장 용량이 부족합니다.</span><br />
+				월 1만원으로 1TB를 추가해보세요.<em class="bu"></em></a>
+			</p>
+			<p class="_pay_warning _move" style="display:none;"><a href="#" style="display:inline-block;"><span class="point2">저장 용량이 많이 부족합니다.</span><br />
+				월 1만원으로 1TB를 추가해보세요.<em class="bu"></em></a>
+			</p>
+			<p class="_pay_over _move" style="display:none;"><a href="#" style="display:inline-block;"><span class="point2">사용 중 용량이 전체 용량보다 큽니다.</span><br />
+				월 1만원으로 1TB를 추가해 넉넉하게 사용해보세요.<em class="bu"></em></a>
+			</p>
+			<p class="_pay_limit" style="display:none;"><span class="point2">저장 용량이 얼마 남지 않았습니다.</span><br />
+				파일을 정리하고 휴지통을 비워주세요.
+			</p>
+			<p class="no_sl_tip"><input type="checkbox" class="_no_tip_checkbox" id="no_sltip_pay"><label for="no_sltip_pay">다시보지않기</label></p>
+		</div>
+		<span class="bg"></span>
+	</div>
+
+	<div class="setting_layer _bubblelayer_footer_guide" style="display:none">
+		<p class="sl_txt">클릭 한 번으로 예쁜 앨범을<br />만들 수 있습니다.<br />앨범을 만들어 공유해 보세요!</p>
+		<p class="no_sl_tip"><input type="checkbox" class="_no_tip_checkbox" id="no_sltip_guide"><label for="no_sltip_guide">다시보지않기</label></p>
+	</div>
+
+	<h3 class="blind">저작권 및 서브메뉴</h3>
+	<address>Copyright ⓒ <a href="http://www.nhncorp.com/" onclick="clickcr(this,'fot.nhncorp','','',event);" target="_blank">NAVER Corp.</a> All Rights Reserved.</address>
+</div>
+<!-- //footer -->
+
+<!--  Layer Holder -->
+
+
+<style type="text/css">
+	
+</style>
+
+
+<textarea id="template_alert" style="display:none">
+	<div class="dh_layer">
+		<div class="type_c">
+			<div class="wrap_pop">
+			<form action="" class="_form" onsubmit="return false;">
+			<fieldset>
+			<legend>안내 메세지</legend>
+				<div class="content">
+					<span class="bu_c">&#160;</span>
+					<h1>{%= message %}</h1>
+					{% if (desc) { %}
+					<div>
+						<div class="desc3">{%= desc %}</div>
+					</div>
+					{% } %}
+				</div>
+				<div class="footer">
+					<button type="button" class="{%= id %}#close"><span class="tx">확인</span></button>
+				</div>
+				<div class="pop_close">
+					<a href="#" class="bu_close_p {%= id %}#close"><span class="blind">닫기</span></a>
+				</div>
+			</fieldset>
+			</form>
+			</div>
+		</div>
+	</div>
+</textarea>
+<textarea id="template_confirm" style="display:none">
+	<div class="dh_layer {%= className %}">
+		<div class="type_c">
+			<div class="wrap_pop">
+			<form action="" class="_form" onsubmit="return false;">
+			<fieldset>
+			<legend></legend>
+				<div class="content">
+					<span class="bu_q">&#160;</span>
+					<h1>{%= message %}</h1>
+					{% if (desc) { %}
+					<div>
+						<div class="desc3">{%= desc %}</div>
+					</div>
+					{% } %}
+				</div>
+				<div class="footer">
+					<button class="{%= id %}#ok"><span class="tx">확인</span></button>
+					<button class="{%= id %}#cancel"><span class="tx">취소</span></button>
+				</div>
+				<div class="pop_close">
+					<a href="#" class="bu_close_p {%= id %}#close"><span class="blind">닫기</span></a>
+				</div>
+			</fieldset>
+			</form>
+			</div>
+		</div>
+	</div>
+</textarea>
+
+
+<div class="_common">
+	<!-- 모바일앱 확대 프로모션 레이어 -->
+	
+	<!-- //모바일앱 확대 프로모션 레이어 -->
+	<div class="transmit_layer _upload" style="position:absolute;z-index:100000"></div>
+	<div class="_context_menu" style="z-index:10000"></div>
+    <div class="no_view _promotion_startpage"></div>
+    <div class="no_view _single_message"></div>
+    <div class="no_view _works_warnning_message"></div>
+	<div class="no_view _popup_basic"></div>
+	<div class="no_view _popup_textarea"></div>
+	<div class="no_view _popup_overwrite"></div>
+	<div class="no_view _sorting"></div>
+    <div class="no_view _popup_location">
+        <!-- 위치선택 레이어 -->
+        <div class="location_layer2">
+            <div class="location">
+                <div class="header">
+                    <h1><span class="bu bu_folder"></span>위치선택</h1>
+                    <div class="new"><a href="#" class="_newfolder">새 폴더 만들기</a></div>
+                </div>
+                <div class="content">
+                    <div class="tree _tree"><!-- 기존 트리와 동일 -->
+                        <div class="tree_in">
+                            <!-- [D] 유동적으로 넓이값 지정해주어야 함 -->
+                            <ul style="width:"><!-- 폴더펼침 아이콘은 div에 tree-selected 주면 자동으로 바뀝니다 -->
+                                <li class="tree-node _ndriveroot" >
+                                    <div class="tree-has-child _rootselect"><span class="root"></span><label><strong>N드라이브</strong></label></div>
+                                    <ul class="_normal_tree"></ul>
+                                </li>
+                                <li class="tree-node _ndrivesharedroot">
+                                    <div class="tree-has-child _sharedrootselect"><span class="root shared"></span><label><strong>공유받은 폴더</strong></label></div>
+                                    <ul class="_share_tree"></ul>
+                                </li>
+                                <li class="tree-node _trashboxselect">
+                                    <div class="_trashbox"><span class="wbasket"></span><label><strong>휴지통</strong></label></div>
+                                </li>
+                                <li class="tree-node _ndriveworks"> <!-- WORKS -->
+                                    <div class="tree-has-child _worksrootselect"><span class="root"></span><label><strong>Works 폴더</strong></label></div>
+                                    <ul class="_works_tree"></ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <p class="loca_txt _message" style="display:none"></p>
+                <div class="footer">
+                    <button class="_ok"><strong>확인</strong></button>
+                    <button class="_cancel">취소</button>
+                </div>
+            </div>
+            <div class="_loading" style="display:none;position:absolute;top:0px;left:0px;width:310px;height:362px;background-color:#fff"></div>
+        </div>
+        <!-- //위치선택 레이어 -->
+    </div>
+	<div class="layer_tbl _doc_type_layer" id="doc_type_layer" style="display:none;">
+		<table cellspacing="0" border="1" summary="문서 유형별 보기 레이어입니다.">
+		<caption>문서 유형별 보기 레이어</caption>
+		<colgroup><col width="*"></colgroup>
+		<tbody>
+		<tr>
+		<td>
+			<ul class="lt_list"><!-- [D] 해상도에 따라 개수가 다르게 노출이 되는데 높이값은 노출개수 * 23 으로 계산하면 됨 -->
+			<li class="ico_total on"><a href="#" class="_all"><span class="chk">&nbsp;</span><span class="ico">&nbsp;</span><em class="txt">전체</em></a></li>
+			<li class="ico_ndoc"><a href="#" class="_ndoc"><span class="chk">&nbsp;</span><span class="ico">&nbsp;</span><em class="txt">ndoc</em></a></li>
+			<li class="ico_nppt"><a href="#" class="_nppt"><span class="chk">&nbsp;</span><span class="ico">&nbsp;</span><em class="txt">nppt</em></a></li>
+			<li class="ico_nxls"><a href="#" class="_nxls"><span class="chk">&nbsp;</span><span class="ico">&nbsp;</span><em class="txt">nxls</em></a></li>
+			<li class="ico_nfrm"><a href="#" class="_nfrm"><span class="chk">&nbsp;</span><span class="ico">&nbsp;</span><em class="txt">nfrm</em></a></li>
+			</ul>
+			<ul class="lt_list">
+			<li class="ico_doc"><a href="#" class="_word"><span class="chk">&nbsp;</span><span class="ico">&nbsp;</span><em class="txt">doc, docx</em></a></li>
+			<li class="ico_hwp"><a href="#" class="_hwp"><span class="chk">&nbsp;</span><span class="ico">&nbsp;</span><em class="txt">hwp</em></a></li>
+			<li class="ico_txt"><a href="#" class="_txt"><span class="chk">&nbsp;</span><span class="ico">&nbsp;</span><em class="txt">txt</em></a></li>
+			<li class="ico_xls"><a href="#" class="_excel"><span class="chk">&nbsp;</span><span class="ico">&nbsp;</span><em class="txt">xls, xlsx</em></a></li>
+			<li class="ico_ppt"><a href="#" class="_ppt"><span class="chk">&nbsp;</span><span class="ico">&nbsp;</span><em class="txt">ppt, pptx</em></a></li>
+			<li class="ico_pdf"><a href="#" class="_pdf"><span class="chk">&nbsp;</span><span class="ico">&nbsp;</span><em class="txt">pdf</em></a></li>
+			<li class="ico_etc"><a href="#" class="_etc"><span class="chk">&nbsp;</span><span class="ico">&nbsp;</span><em class="txt">기타</em></a></li>
+			</ul>
+		</td>
+		</tr>
+		</tbody>
+		</table>
+	</div>
+	<div class="no_view _popup_register"></div>
+	<div class="no_view _popup_share_register"></div>
+	<div class="no_view _popup_alreadyregister"></div>
+	<div class="no_view _popup_groupid"></div>
+	<div class="no_view _popup_norealname"></div>
+	<div class="no_view _layer_worklimit"></div>
+	<div class="no_view _popup_wordpromotion">
+		<div class="bubble">
+			<div class="cont">
+				<p>새롭게 추가된 <strong>네이버 워드</strong>로<br>나만의 문서를 온라인에서 만들어<br>보세요.</p>
+				<div><input type="checkbox" id="c1"> <label for="c1">다음부터 보지않음</label> <button type="button"><span class="tx">확인</span></button></div>
+			</div>
+
+			<div class="bg"></div>
+		</div>
+	</div>
+	<div class="_airswf" style="display:none;">
+		<div class="_aircheck"></div>
+		<div class="no_view _airUseMessage"></div>
+	</div>
+	<!-- Play N드라이브 -->
+	<div class="play_area _event_play_ndrive" style="display:none;">
+		<h2 class="blind_txt">공유 폴더로 나누는 대화!</h2>
+		<p class="blind_txt">공유 받은 문서와 사진에 감상평,이야기를 남겨보세요.</p>
+		<ol class="blind_txt">
+		<li>공유 멤버들과 대화하듯이!</li>
+		<li>공유 폴더의 오른쪽에 글쓰기 영역이 나타나며, 등록한 글은 공유 멤버들에게 보여집니다.</li>
+		<li>최대 1000자까지 넉넉하게 글을 작성할 수 있습니다.</li>
+		</ol>
+		<a class="more_pla" href="#">play! 미션시작</a>
+		<a class="clse_ly _close1" href="#">닫기</a>
+	</div>
+	<!-- //Play N드라이브 -->
+
+	<div class="no_view dh_layer _capacity_expired" style="position:relative;width:420px">
+		<div class="type_c">
+			<div class="wrap_pop" style="width:418px">
+			<form action="">
+			<fieldset>
+			<legend>안내 메세지</legend>
+				<div class="content">
+					<span class="bu_c">&nbsp;</span>
+					<h1><span class="pw_p"><span class="_expiredate">0000년 00월 00일</span></span>에 추가 용량 이용기간이<br> 만료되었습니다. 새로운 이용권을 구입하시거나<br>사용 용량을 30GB이하로 정리해 주세요.</h1>
+					<div class="pay_dsc">
+						<p>이용 기간 만료 후에도 30GB 이상 용량을 사용하시면<br> 다음과 같이 N드라이브사용이 제한됩니다.</p>
+						<ul>
+						<li><span class="bu"></span> 올리기 제한(파일 삭제 및 편집 가능)</li>
+						<li><span class="bu"></span> 2개월 뒤 예고 후 전체 파일 삭제</li>
+						</ul>
+					</div>
+					<div class="desc10"><em>월 1만원에 1TB를 추가해보세요! <a href="#" class="_pay">용량 추가하기</a></em></div>
+				</div>
+				<div class="footer">
+					<button class="_close"><span class="tx">확인</span></button>
+				</div>
+				<div class="pop_close"><a class="bu_close_p _close" href="#"><span class="blind">닫기</span></a></div>
+			</fieldset>
+			</form>
+			</div>
+		</div>
+	</div>
+	<div class="no_view dh_layer _capacity_over" style="position:relative;width:401px">
+		<div class="type_c">
+			<div class="wrap_pop" style="width:398px">
+			<form action="">`
+			<fieldset>
+			<legend>안내 메세지</legend>
+				<div class="content">
+					<span class="bu_c">&nbsp;</span>
+					<h1>회원님은 현재 <span class="pw_p _usage">150</span>/<span class="_total">130GB</span>를 사용 중입니다.</h1>
+					<div class="desc3">용량을 추가하시거나 사용 용량을 <strong class="num _total">130GB</strong>이하로 정리해 주세요.<br>용량 부족으로 올리기가 제한됩니다.</div>
+					<div class="desc10"><em>월 1만원에 1TB를 추가해보세요! <a href="#" class="_pay">용량 추가하기</a></em></div>
+				</div>
+				<div class="footer">
+					<button class="_close"><span class="tx">확인</span></button>
+				</div>
+				<div class="pop_close"><a class="bu_close_p _close" href="#"><span class="blind">닫기</span></a></div>
+			</fieldset>
+			</form>
+			</div>
+		</div>
+	</div>
+	<div id="ndrive_bodysearch_idxfolder_list" class="dh_layer" style="position:absolute;width:467px;display:none;">
+		<div class="type_c">
+			<div class="wrap_pop">
+				<div class="wk_use_layer">
+					<div class="wk_use_header">
+						<h1><span class="bu bu_folder"></span>본문 검색 사용 중인 폴더</h1>
+					</div>
+					<div class="transit_tbl_wrap transit_tbl_wrap_v2">
+						<div class="transit_tbl_body transit_tbl_body_v2 _list_body"></div>
+					</div>
+					<p class="wk_use_tip">Works 폴더,공유받은 폴더는 관리자/마스터가 본문 검색을 설정한 경우에만 본문 검색 가능합니다.</p>
+				</div>
+				<div class="footer">
+					<button style="height:27px" onclick="nhn.NDrive.Layout.BodySearchListViewer.CloseIdxFolderLayer();"><strong class="tx">확인</strong></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="ndrive_file_move_status_layer" class="MdLayerProgress02">
+		<div class="progress_box">
+			<div style="width:90%;margin:0 5% 10px 5%;">
+				<p class="_status" style="text-align:left;padding-top:18px;margin-bottom:5px;visibility:visible">
+					(<span class="_count">0</span>/<span class="_total">0</span>)
+					<span class="_filename" style="display:inline-block;width:245px;vertical-align:top;white-space:nowrap;text-overflow:ellipsis;o-text-overflow:ellipsis;overflow-x:hidden;"></span>
+				</p>
+				<span class="progress_bg">
+					<em class="progress_bar _progress_bar" style="width:0%"></em>
+				</span>
+
+				<strong><span class="progress_rate _progress_rate">0</span>%</strong>
+			</div>
+			<span class="cancel"><button type="button" class="_cancel"><span class="tx">취소</span></button></span>
+		</div>
+	</div>
+	<div id="alertPayUpgreadeTypeRemove" class="layer_pay_upgrade type_del" style="z-index:999;display:none">
+	    <h3 class="ply_tit">용량이 부족해 파일을 삭제하셨나요?<span class="ic"></span></h3>
+	    <p class="ply_p">
+	        1TB로 용량 업그레이드!!<br/>보다 편리하고, 넉넉하게 사용해보세요. 
+	    </p>
+	    <div class="ply_btn">
+	        <a href="#" onclick="nhn.NDrive.popup.payCapacity(); clickcr(this,'prm_1tb.delete','','',event); return false;">업그레이드하기</a>
+	    </div>
+	    <a href="#" class="ply_cls" onclick="ncore.view.hideLayer('alertPayUpgreadeTypeRemove'); return false;">닫기</a>
+	</div>
+	<div id="alertPayUpgreadeTypeClearBasket" class="layer_pay_upgrade type_basket" style="z-index:999;display:none">
+	    <h3 class="ply_tit">용량이 부족한가요?<span class="ic"></span></h3>
+	    <p class="ply_p">
+	        월 1만원에 1TB를 추가해보세요!<br/>용량 걱정 없이 사용할 수 있습니다.
+	    </p>
+	    <div class="ply_btn">
+	        <a href="#"  onclick="nhn.NDrive.popup.payCapacity(); clickcr(this,'prm_1tb.empty','','',event); return false;">업그레이드하기</a>
+	    </div>
+	    <a href="#" class="ply_cls" onclick="ncore.view.hideLayer('alertPayUpgreadeTypeClearBasket'); return false;">닫기</a>
+	</div>
+</div>
+<!--  //Layer Holder -->
+
+<!-- Ajax 상태 알림 레이어 -->
+<div class="_debug_ajax_layer _layer" style="display:none;top:100px;left:100px;width:500px;height:300px;position:absolute;z-index:1000000;border:2px solid red;background-color:white">
+	<div class="_drag_area" style="position:relative;height:25px;background-color:yellow;"><b>Ajax Status</b> <button onclick="nhn.NDrive.oApp.exec('ACTION_AJAX_DEBUG_CLOSE')">Close</button></div>
+	<div id="ajaxdebug" style="position:relative;border:1px solid blue;height:275px;width:100%;overflow:auto;">
+
+	</div>
+</div>
+<!-- //Ajax 상태 알림 레이어 -->
+
+<!-- Send Service -->
+<form id="send2service" onsubmit="return false;" target="_blank" method="post" class="no_view"><input name="servicetype" id="servicetype" type="hidden"><input name="fileinfos" id="fileinfos" type="hidden"><input name="html5Upload" id="html5Upload" type="hidden"></form>
+<!-- //Send Service -->
+
+<!-- ActiveX Download Directory -->
+<form id="activedownload" onsubmit="return false;" target="_blank" method="get" class="no_view"><input type=text name="directory" id="activedownload_directory" value="C:\NDDown\"></input></form>
+<!-- //ActiveX Download Directory -->
+	<div id="nphotoCommon"></div>
+</div>
+</div>
+	
+
+
+
+
+
+
+
+
+	<script type="text/javascript" charset="UTF-8" src="/js/release/web.ndrive.js?20150422-1808"></script>
+
+
+
+
+
+
+
+	<script type="text/javascript" charset="UTF-8" src="/js/release/web.launcher.js?20150422-1808"></script>
+
+
+
+<!-- Naver Photo -->
+<script type="text/javascript" charset="UTF-8" src="/js/nclktag.js?20150422-1808"></script>
+<script type="text/javascript">
+	nclk_do();
+</script>
+
+<!-- Naver 공통 -->
+<script type="text/javascript" charset="UTF-8" src="http://static.naver.com/common/js/cs_ops_webncc.js"></script>
+<script type="text/javascript" charset="utf-8" src="http://static.gn.naver.net/template/gnb_utf8.nhn?20150517"></script>
+
+</body>
+</html>
+I���4      UX��UX��;(L`       :http://ndrive.naver.com/ necko:classified 1 request-method GET request-User-Agent Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:35.0) Gecko/20100101 Firefox/35.0 response-head HTTP/1.1 200 OK
+Date: Sun, 17 May 2015 13:41:58 GMT
+Server: Apache
+p3p: CP="ALL CURa ADMa DEVa TAIa OUR BUS IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC OTC", CP="ALL CURa ADMa DEVa TAIa OUR BUS IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC OTC"
+Cache-Control: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Vary: User-Agent
+Content-Type: text/html;charset=UTF-8
+ charset UTF-8 uncompressed-len 0  T�

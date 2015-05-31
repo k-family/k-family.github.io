@@ -1,0 +1,17 @@
+libGL error: pci id for fd 4: 80ee:beef, driver (null)
+libGL error: core dri or dri2 extension not found
+libGL error: failed to load driver: vboxvideo
+ibus 스크립트를 run_im에서 실행했습니다.
+auto 스크립트를 run_im에서 실행했습니다.
+default 스크립트를 run_im에서 실행했습니다.
+init: at-spi2-registryd main process ended, respawning
+init: at-spi2-registryd main process ended, respawning
+init: at-spi2-registryd main process ended, respawning
+init: at-spi2-registryd main process ended, respawning
+init: at-spi2-registryd main process ended, respawning
+init: at-spi2-registryd main process ended, respawning
+init: at-spi2-registryd main process ended, respawning
+init: at-spi2-registryd main process ended, respawning
+init: at-spi2-registryd main process ended, respawning
+init: at-spi2-registryd main process ended, respawning
+init: at-spi2-registryd respawning too fast, stopped

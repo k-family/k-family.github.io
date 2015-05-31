@@ -1,0 +1,40 @@
+ERROR 2015-05-30 22:43:11 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2015-05-30 22:43:11 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2015-05-30 22:43:11 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2015-05-30 22:53:05 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2015-05-30 22:53:05 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2015-05-30 22:53:05 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+(process:3133): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+pbs<@resource://unity/observer.js:38:71
+Observer.prototype.observe@resource://unity/observer.js:77:24
+get_contentWindow@chrome://global/content/bindings/browser.xml:412:54
+get_securityUI@chrome://global/content/bindings/browser.xml:662:17
+browser_XBL_Constructor@chrome://global/content/bindings/browser.xml:786:17
+WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+pbs<@resource://unity/observer.js:38:71
+Observer.prototype.observe@resource://unity/observer.js:77:24
+WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+pbs<@resource://unity/observer.js:38:71
+Observer.prototype.observe@resource://unity/observer.js:77:24
+WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+pbs<@resource://unity/observer.js:38:71
+Observer.prototype.observe@resource://unity/observer.js:77:24
+1432995273535	addons.repository	WARN	Unknown type id when parsing addon: 5
+1432995273541	addons.repository	WARN	Unknown type id when parsing addon: 5
+1432995273551	addons.repository	WARN	Unknown type id when parsing addon: 5
+1432995274915	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+1432995275718	addons.update-checker	WARN	Update manifest for {2e1445b0-2682-11e1-bfc2-0800200c9a66} did not contain an updates property
+1432995275750	addons.update-checker	WARN	Update manifest for webapps-team@lists.launchpad.net did not contain an updates property
+1432995275816	addons.update-checker	WARN	Update manifest for online-accounts@lists.launchpad.net did not contain an updates property
+Nautilus-Share-Message: Called "net usershare info" but it failed: 'net usershare'에서 에러 255을(를) 반환: net usershare: cannot open usershare directory /var/lib/samba/usershares. Error 그런 파일이나 디렉터리가 없습니다
+Please ask your system administrator to enable user sharing.
+
+Nautilus-Share-Message: Called "net usershare info" but it failed: 'net usershare'에서 에러 255을(를) 반환: net usershare: cannot open usershare directory /var/lib/samba/usershares. Error 그런 파일이나 디렉터리가 없습니다
+Please ask your system administrator to enable user sharing.
+
